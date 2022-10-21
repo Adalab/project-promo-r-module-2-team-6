@@ -1,1 +1,12 @@
-
+.footer{
+    font-family: $mainFont;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__copy{
+        color:#6b6b6b;
+        font-size: 0.875rem;
+    }
+}
