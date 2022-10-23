@@ -1,0 +1,61 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: $backgroundWhite;
+    &__h1{
+        display: none;
+    }
+    &__img{
+        width: 250px;
+        height: 63px;
+        margin: 96px 35px 35px 35px;
+    }
+    &__title{
+        text-align: center;
+        &--create{
+            color: $mainOrange;
+            font-family: $landingTitle;
+            font-size: 19.2px;
+        }
+        &--text{
+            color: $darkGreen;
+            font-family: $mainFont;
+            font-size: 12.8px;
+        }
+    } 
+    &__options{
+        display: flex;
+        border: solid 1.6px $mainOrange;
+        border-radius: 4px ;
+        margin:17.8px 0 0.2px;
+        list-style-type: none;
+        &--list{
+            display: flex;
+            color: $mainOrange;
+            list-style-type: none;
+            gap: 30px;   
+            margin-top: 15px;
+            margin-bottom: 10px;
+            }            
+    }
+    &__start{
+        display: flex;
+        margin: 38px 101px 30px 90px;
+        border-radius: 21px;
+        text-transform: uppercase;
+        background-color: $mediumGreen;
+        &--create{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-family: $mainFont;
+            padding: 10px 20px;
+            
+        }
+    }  
+    
+
+}
