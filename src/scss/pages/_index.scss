@@ -28,18 +28,21 @@
     } 
     &__options{
         display: flex;
-        border: solid 1.6px $mainOrange;
+        border: solid rgba($mainOrange, $alpha: 0.2) 1.6px;
         border-radius: 4px ;
         margin:17.8px 0 0.2px;
         list-style-type: none;
         &--list{
             display: flex;
-            color: $mainOrange;
+            color: grey;
             list-style-type: none;
             gap: 30px;   
             margin-top: 15px;
             margin-bottom: 10px;
             }            
+    }
+    .fa-icon{
+        color: $mainOrange;
     }
     &__start{
         display: flex;
