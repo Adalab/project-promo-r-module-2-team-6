@@ -1,0 +1,14 @@
+.firstContainer {
+    padding-left: 20px;
+    padding-top: 27px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  
+    .fa-light,
+    .fa-keyboard {
+      width: 21px;
+      height: 18px;
+      color: $mainOrange;
+    }
+}
