@@ -10,6 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    font-size: 18px;
+    padding-bottom: 10px;
     &--icon {
       color: $mainOrange;
       padding-right: 12px;
@@ -18,12 +20,10 @@
       font-family: $mainFont;
       font-weight: 600;
       color: $greyMetal;
-      font-size: 18px;
       text-transform: uppercase;
-      padding-right: 155px;
+      padding-right: 166px;
     }
     &--arrow {
-      font-size: 18px;
       color: $greyMetal;
     }
   }
