@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__img{
+        width: 201px;
+        margin: 31px 0 30px 40px;
+    }
+    &__title{
+        display: none;
+    }
+}
