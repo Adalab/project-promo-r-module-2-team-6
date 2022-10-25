@@ -1,4 +1,90 @@
-.card{
+.card-section {
     height: 457px;
-    background-color: silver;
+    background-image: linear-gradient(#bfcdd0, #dde9ed);
+    padding: 42px 35px 40px 45px;
+}
+
+.reset {
+    all: unset;
+    cursor: pointer;
+    width: 75px;
+    height: 30px;
+    border: solid 1px white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    &-icon {
+        color: $greyMetal;
+    }
+
+    &-text {
+        color: $greyMetal;
+        text-transform: uppercase;
+        font-family: $mainFont;
+        font-size: 12px;
+    }
+}
+
+.card{
+    margin-top: 20px;
+    background-color: white;
+    padding-top: 23px;
+    width: 240px;
+    height: 329px;
+    box-shadow: 0px 2px 5px 0px #54585a;
+
+    &-text{
+        height: 42px;
+        border-left: solid 5px $mediumGreen;
+        font-family: $cardFont;
+        margin-bottom: 10px;
+        
+        &-name{
+            color: $darkGreen;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: capitalize;
+            margin-left: 15px;
+        }
+    
+        &-job{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            margin-left: 15px;
+            color: $greyMetal;
+            &:first-letter {text-transform:capitalize;}
+        } 
+    }
+
+    &-image{
+        background-color: $darkGreen;
+        width: 240px;
+        height: 200px;
+    }
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 62px 12px 20px;
+
+    &-icon{
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        color: $darkGreen;
+        border: $lightGreen solid 2px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.fa-mobile-screen-button, .fa-envelope, .fa-linkedin-in, .fa-github-alt {
+    font-size: 18px;
 }
