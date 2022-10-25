@@ -1,14 +1,98 @@
-.firstContainer {
-  padding-left: 20px;
-  padding-top: 27px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+.line{
+  width: 280px;
+  border-top: 1px solid #d8d8d8;
 }
 
-.fa-regular,
-.fa-keyboard {
-  width: 21px;
-  height: 18px;
-  color: $mainOrange;
+.input{
+  border: 1px solid $lightGreen;
+  width: 288px;
+  height: 30px;
 }
+
+.text-label{
+  font-family: $mainFont;
+  font-size: 14px;
+  line-height: 20px;
+  color: $darkGreen;
+  margin-bottom: 7px;
+}
+
+.fill{
+  margin: 10px 20px 0 23px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+    &__container{
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    
+      &--icon{
+        color: $mainOrange;
+        padding-right: 12px;
+      }
+      &--legend{
+        text-transform: uppercase;
+        font-family: $mainFont;
+        font-weight: 600;
+        color: $greyMetal;
+      }
+      &--arrow{
+        font-size: 18px;
+        color: $greyMetal;
+        padding-left: 137px;
+      }
+    }
+    &__name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 25px 0 20px 0;
+    }
+    &__job{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    &__img{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    &__email{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    &__tel{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    &__linkedin{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    &__git{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+}
+

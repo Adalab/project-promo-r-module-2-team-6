@@ -1,14 +1,14 @@
 .share{
-    margin-bottom: 30px;
     border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    &__create{
+    &__div{
+        margin: 10px 20px 10px 23px;
         display: flex;
         align-items: center;
-        padding: 10px 20px 0 23px;
+        justify-content: flex-start;
         font-size: 18px;
             &--icon{
                 color: $mainOrange;
@@ -62,7 +62,7 @@
             color: $greyMetal;
         }
         &--url{
-            margin-top: 5px;
+            margin: 5px 13px 0 15px;
             text-decoration: none;
             font-family: $mainFont;
             font-size: 12px;

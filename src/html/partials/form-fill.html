@@ -1,26 +1,46 @@
-<fieldset>
-    <div class="firstContainer">
-        <p><i class="fa-regular fa-keyboard"></i></p>
-        <legend class="title">rellena</legend>
+<fieldset class="fill">
+    <div class="fill__container">
+        <i class="fa-regular fa-keyboard fill__container--icon"></i>
+        <legend class="fill__container--legend">rellena</legend>
+        <i class="fa-solid fa-chevron-up fill__container--arrow"></i>
+        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+        <!-- o transform rotate 180 -->
     </div>
-    <label class="name" for="name">nombre completo</label>
-    <input type="text" id="name" class="inputName" placeholder="Ej: Sally Jill" />
 
-    <label class="job" for="job">puesto</label>
-    <input type="text" id="job" class="inputJob" placeholder="Ej: Front-end unicorn" />
+    <div class="fill__name">
+        <label class="fill__name--label text-label" for="name">nombre completo</label>
+        <input type="text" id="name" class="fill__name--inputName input" placeholder="Ej: Sally Jill" />
+    </div>
 
-    <label class="img" for="img">imagen de perfil</label>
-    <input type="button" id="img" class="inputImg" value="Añadir imagen" />
+    <div class="fill__job">
+        <label class="fill__job--label text" for="job">puesto</label>
+        <input type="text" id="job" class="fill__job--inputJob input" placeholder="Ej: Front-end unicorn" />
+    </div>
 
-    <label class="email" for="email">email</label>
-    <input type="email" id="email" class="inputEmail" placeholder="sally-hill@gmail.com" />
+    <div class="fill__img">
+        <label class="fill__img--label text" for="img">imagen de perfil</label>
+        <input type="button" id="img" class="fill__img--inputImg input" value="Añadir imagen" />
+    </div>
 
-    <label class="tel" for="tel">teléfono</label>
-    <input type="tel" id="tel" class="inputTel" placeholder="Ej: 555-55-55-55" />
+    <div class="fill__email">
+        <label class="fill__email--label text" for="email">email</label>
+        <input type="email" id="email" class="fill__email--inputEmail input" placeholder="sally-hill@gmail.com" />
+    </div>
 
-    <label class="linkedin" for="linkedin">linkedin</label>
-    <input type="text" id="linkedin" class="inputLinkedin" placeholder="http://linkedin.com/in/sally.hill" />
+    <div class="fill__tel">
+        <label class="fill__tel--label text" for="tel">teléfono</label>
+        <input type="tel" id="tel" class="fill__tel--inputTel input" placeholder="Ej: 555-55-55-55" />
+    </div>
 
-    <label class="git" for="git">github</label>
-    <input type="git" id="git" class="inputGit" placeholder="Ej: @sally-hill" />
+    <div class="fill__linkedin">
+        <label class="fill__linkedin--label text" for="linkedin">linkedin</label>
+        <input type="text" id="linkedin" class="fill__linkedin--inputLinkedin input" placeholder="http://linkedin.com/in/sally.hill" />
+    </div>
+
+    <div class="fill__git">
+        <label class="fill__git--label text" for="git">github</label>
+        <input type="git" id="git" class="fill__git--inputGit input" placeholder="Ej: @sally-hill" />
+    </div>
+    <p class="line"></p>
+    <!-- border bottom -->
 </fieldset>
