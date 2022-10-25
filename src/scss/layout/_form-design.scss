@@ -1,47 +1,53 @@
 /*Icono+título+pestaña*/
-.firstContainer {
-  padding-left: 20px;
-  padding-top: 27px;
+.design {
+  margin: 10px 20px 0 23px;
+  border: none;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-
-  .fa-solid,
-  .fa-object-ungroup {
-    width: 21px;
-    height: 18px;
-    color: $mainOrange;
-  }
-
-  .title {
-    font-family: $mainFont;
-    font-weight: bold;
-    color: $greyMetal;
-    font-size: 18px;
-    text-transform: uppercase;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  &__div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &--icon {
+      color: $mainOrange;
+      padding-right: 12px;
+    }
+    &--legend {
+      font-family: $mainFont;
+      font-weight: 600;
+      color: $greyMetal;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding-right: 155px;
+    }
+    &--arrow {
+      font-size: 18px;
+      color: $greyMetal;
+    }
   }
 }
 
 /*colores+paletas*/
 .secondContainer {
-  margin-left: 39px;
-  margin-top: 22px;
-  margin-right: 20px;
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
   .colors {
     font-family: $mainFont;
     font-size: 14px;
     color: $greyMetal;
     text-transform: uppercase;
+    margin: 22px 0 0 29px;
   }
   .palette {
-    display: flex;
     list-style: none;
     margin-bottom: 20px;
-    flex-direction: row;
+    display: flex;
     justify-content: end;
 
     .checkBox {
+      padding-top: 5px;
       width: 17px;
       height: 17px;
     }
@@ -84,4 +90,9 @@
 }
 .greyThree {
   background-color: $greyThree;
+}
+
+.line {
+  width: 280px;
+  border-top: 1px solid #d8d8d8;
 }

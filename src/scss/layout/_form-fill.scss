@@ -2,7 +2,7 @@
   border: 1px solid $lightGreen;
   width: 281px;
   height: 30px;
-  &::placeholder{
+  &::placeholder {
     padding-inline-start: 10px;
     color: #d8d8d8;
   }
@@ -14,7 +14,7 @@
   line-height: 20px;
   color: $darkGreen;
   margin-bottom: 7px;
-  &::first-letter{
+  &::first-letter {
     text-transform: capitalize;
   }
 }
