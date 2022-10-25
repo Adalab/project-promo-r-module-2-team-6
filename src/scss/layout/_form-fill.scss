@@ -1,98 +1,111 @@
-.line{
-  width: 280px;
-  border-top: 1px solid #d8d8d8;
-}
-
-.input{
+.input {
   border: 1px solid $lightGreen;
-  width: 288px;
+  width: 281px;
   height: 30px;
+  &::placeholder{
+    padding-inline-start: 10px;
+    color: #d8d8d8;
+  }
 }
 
-.text-label{
+.text-label {
   font-family: $mainFont;
   font-size: 14px;
   line-height: 20px;
   color: $darkGreen;
   margin-bottom: 7px;
+  &::first-letter{
+    text-transform: capitalize;
+  }
 }
 
-.fill{
+.fill {
   margin: 10px 20px 0 23px;
   border: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-    &__container{
-      display: flex;
-      align-items: center;
-      font-size: 18px;
-    
-      &--icon{
-        color: $mainOrange;
-        padding-right: 12px;
-      }
-      &--legend{
-        text-transform: uppercase;
-        font-family: $mainFont;
-        font-weight: 600;
-        color: $greyMetal;
-      }
-      &--arrow{
-        font-size: 18px;
-        color: $greyMetal;
-        padding-left: 137px;
-      }
-    }
-    &__name{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin: 25px 0 20px 0;
-    }
-    &__job{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-    &__img{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-    &__email{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-    &__tel{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-    &__linkedin{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 20px;
-    }
-    &__git{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-bottom: 30px;
-    }
-}
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #d8d8d8;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    padding-bottom: 25px;
 
+    &--icon {
+      color: $mainOrange;
+      padding-right: 12px;
+    }
+    &--legend {
+      text-transform: uppercase;
+      font-family: $mainFont;
+      font-weight: 600;
+      color: $greyMetal;
+      padding-right: 155px;
+    }
+    &--arrow {
+      font-size: 18px;
+      color: $greyMetal;
+    }
+  }
+  &__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  &__job {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 141px 20px 0;
+    &--inputImg {
+      width: 140px;
+      height: 30px;
+      color: white;
+      background-color: $mainOrange;
+      border-radius: 3px;
+      border: 1px solid $mainOrange;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
+  }
+  &__email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  &__tel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  &__linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  &__git {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+}
