@@ -4,7 +4,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid #d8d8d8;
+        @media all and (min-width: 768px){
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
     
+                
     &__copy{
         color:#d8d8d8;
         font-size: 14px;
@@ -18,5 +25,9 @@
         width: 103px;
         height: 40px;
         margin: 12px 47px 0 48px;
+            @media all and (min-width: 768px){
+                width: 103px;
+                height: 40px;
+            }
     }
 }

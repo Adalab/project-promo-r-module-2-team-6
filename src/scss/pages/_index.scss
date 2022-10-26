@@ -11,8 +11,12 @@
     &__img{
         height: 63px;
         width: 250px;
-        height: 63px;
         margin: 96px 35px 35px 35px;
+            @media all and (min-width: 768px){
+                width: 419px;
+                height: 105px;
+                margin-top: 350px;;
+            }
     }
     &__title{
         text-align: center;
@@ -21,6 +25,9 @@
             font-family: $landingTitle;
             font-size: 19.2px;
             font-weight: 900;
+                @media all and (min-width: 768px){
+                font-size: 24px;
+                }
         }
         &--text{
             color: $darkGreen;
@@ -28,16 +35,28 @@
             font-size: 12.8px;
             text-align: center;
             white-space: pre-line;
-            margin: 0px 27px 0px 27px;        
+            margin: 0px 27px 0px 27px; 
+                @media all and (min-width: 768px){
+                font-size: 16px;
+                width: 331px;
+                height: 48px;
+                font-size: 16px;
+                }       
         }
     } 
     &__options{
         display: flex;
         border: solid rgba($mainOrange, $alpha: 0.2) 1.6px;
         border-radius: 4px;
-        padding: 15px 20px 10px 20px;
+        padding: 15px 20px 17.8px 31.5px;
         margin:17.8px 26px 0 26px;
         list-style-type: none;
+            @media all and (min-width: 768px){
+                width: 325px;
+                height: 86px;
+                justify-content: space-around;
+                
+            }
         &--list{
             display: flex;
             align-items: center;
@@ -49,15 +68,25 @@
             gap: 30px;   
             margin-top: 15px;
             margin-bottom: 10px;
+            @media all and (min-width: 768px){
+                gap: 51px;
+            }
+            
             }            
     }
     .cop{
         display: flex;
         flex-direction: column;
-        
+    
     }
+
     .fa-icon{
         color: $mainOrange;
+        font-size: 22.4px;
+        @media all and (min-width: 768px){
+            font-size: 28px;
+        }
+
         
         
     }
@@ -67,6 +96,9 @@
         border-radius: 21px;
         text-transform: uppercase;
         background-color: $mediumGreen;
+        @media all and (min-width: 768px){
+            margin:186px 0 59px 0;
+        }
         &--create{
             text-decoration: none;
             color: white;
