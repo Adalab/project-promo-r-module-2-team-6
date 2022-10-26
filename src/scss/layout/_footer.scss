@@ -6,7 +6,17 @@
     align-items: center;
     
     &__copy{
-        color:#6b6b6b;
-        font-size: 0.875rem;
+        color:#d8d8d8;
+        font-size: 14px;
+        margin: 18px 61px 12px 61px;
+        width: 198px;
+        height: 20px;
+        
+    }
+
+    &__logo{
+        width: 103px;
+        height: 40px;
+        margin: 12px 47px 0 48px;
     }
 }
