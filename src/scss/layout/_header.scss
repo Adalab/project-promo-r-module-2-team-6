@@ -1,10 +1,13 @@
 .header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    @media all and (min-width: 768px) {
+        justify-content: flex-start;
+    }
     &__img{
         width: 201px;
-        margin: 31px 0 30px 40px;
+        margin: 31px 79px 30px 40px;
     }
     &__title{
         display: none;
