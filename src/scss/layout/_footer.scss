@@ -1,33 +1,31 @@
-.footer{
-    font-family: $mainFont;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid #d8d8d8;
-        @media all and (min-width: 768px){
-            flex-direction: row;
-            justify-content: space-between;
-            
-        }
-    
-                
-    &__copy{
-        color:#d8d8d8;
-        font-size: 14px;
-        margin: 18px 61px 12px 61px;
-        width: 198px;
-        height: 20px;
-        
-    }
+.footer {
+  font-family: $mainFont;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d8d8d8;
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    &__logo{
-        width: 103px;
-        height: 40px;
-        margin: 12px 47px 0 48px;
-            @media all and (min-width: 768px){
-                width: 103px;
-                height: 40px;
-            }
+  &__copy {
+    color: #d8d8d8;
+    font-size: 14px;
+    margin: 18px 61px 12px 61px;
+    width: 198px;
+    height: 20px;
+  }
+
+  &__logo {
+    width: 103px;
+    height: 40px;
+    margin: 12px 47px 20px 48px;
+    @media all and (min-width: 768px) {
+      width: 103px;
+      height: 40px;
+      margin: 10px 40px 10px 0;
     }
+  }
 }
