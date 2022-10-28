@@ -5,6 +5,11 @@
     @media all and (min-width: 768px) {
         justify-content: flex-start;
     }
+    @media all and (min-width: 1024px){
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__img{
         width: 201px;
         margin: 31px 79px 30px 40px;
