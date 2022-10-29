@@ -8,27 +8,31 @@
 //primera flechita por defecto abierta
 
 //variables
-const design =  document.querySelector('.js-design');
-// const fill =  document.querySelector('.js-fill');
-// const btnCreate =  document.querySelector('.js-btn-create');
+const design = document.querySelector('.js-design');
+const fill =  document.querySelector('.js-fill');
+const btnCreate =  document.querySelector('.js-btn-create');
 const arrowDesign = document.querySelector('.js-arrow-design');
 const arrowFill = document.querySelector('.js-arrow-fill');
 const arrowShare = document.querySelector('.js-arrow-share');
-// const arrow = document.querySelector('.js-arrow');
 
 //funciones
-function handleClick(event){
+function handleClick(event) {
   event.preventDefault();
-  console.log(event.target);
-  
-//   if (event.target.classList.contains('js-arrow-design')&&event.target.classList.contains('collapsed')){
-//     console.log('hola');
-//     design.classList.remove('collapsed');
-//   }else{
-//     console.log('hola');
-//   }
+  if (event.target.classList.contains('js-arrow-design')) {
+    design.classList.toggle('collapsed');
+    fill.classList.add('collapsed');
+    btnCreate.classList.add('collapsed');
+  }else if (event.target.classList.contains('js-arrow-fill')) {
+    fill.classList.toggle('collapsed');
+    arrowFill.classList.toggle('arrow-fill-rotate');
+    design.classList.add('collapsed');
+    btnCreate.classList.add('collapsed');
+  }else if (event.target.classList.contains('js-arrow-share')) {
+    btnCreate.classList.toggle('collapsed');
+    design.classList.add('collapsed');
+    fill.classList.add('collapsed');
+  }
 }
-
 
 //eventos
 arrowDesign.addEventListener('click', handleClick);
