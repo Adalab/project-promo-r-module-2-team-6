@@ -48,56 +48,66 @@
         </section>
         <section>
             <form>
-                <fieldset class="design ">
+                <fieldset class="design">
+                  <div class="design__div">
+                    <i class="fa-solid fa-object-ungroup design__div--icon"></i>
+                    <legend class="design__div--legend">diseña</legend>
+                    <i
+                      class="fa-solid fa-chevron-up design__div--arrow js-arrow js-arrow-design-up"
+                    ></i>
+                    <i
+                      class="fa-solid fa-chevron-down design__div--arrow js-arrow js-arrow-design-down collapsed"
+                    ></i>
+                  </div>
 
-                    <div class="design__div">
-                        <i class="fa-solid fa-object-ungroup design__div--icon"></i>
-                        <legend class="design__div--legend">diseña</legend>
-                        <i class="fa-solid fa-chevron-up design__div--arrow js-arrow js-arrow-design"></i>
+                  <div class="design__second js-design">
+                    <p class="design__second--colors">colores</p>
+                    <div class="div2_container">
+                      <div class="div2">
+                        <ul class="div2__palette">
+                          <label class="div2__palette--checkBox"
+                            ><input type="radio" id="green" name="palette"
+                          /></label>
+                          <li class="div2__palette--darkGreen div2__palette--list"></li>
+                          <li class="div2__palette--mediumGreen div2__palette--list"></li>
+                          <li class="div2__palette--lightGreen div2__palette--list"></li>
+                        </ul>
+                      </div>
+                      <div class="div2">
+                        <ul class="div2__palette">
+                          <label class="div2__palette--checkBox"
+                            ><input type="radio" id="red" name="palette"
+                          /></label>
+                          <li class="div2__palette--darkRed div2__palette--list"></li>
+                          <li class="div2__palette--mediumRed div2__palette--list"></li>
+                          <li class="div2__palette--lightRed div2__palette--list"></li>
+                        </ul>
+                      </div>
+                      <div class="div2">
+                        <ul class="div2__palette">
+                          <label class="div2__palette--checkBox"
+                            ><input type="radio" id="random" name="palette"
+                          /></label>
+                          <li class="div2__palette--greenThree div2__palette--list"></li>
+                          <li class="div2__palette--yellowThree div2__palette--list"></li>
+                          <li class="div2__palette--greyThree div2__palette--list"></li>
+                        </ul>
+                      </div>
                     </div>
-
-                    <div class="design__second js-design">
-                        <p class="design__second--colors">colores</p>
-                        <div class="div2_container">
-                            <div class="div2">
-                                <ul class="div2__palette">
-                                    <label class="div2__palette--checkBox"><input type="radio" id="green" name="palette" /></label>
-                                    <li class="div2__palette--darkGreen div2__palette--list"></li>
-                                    <li class="div2__palette--mediumGreen div2__palette--list"></li>
-                                    <li class="div2__palette--lightGreen div2__palette--list"></li>
-                                </ul>
-                            </div>
-                            <div class="div2">
-                                <ul class="div2__palette">
-                                    <label class="div2__palette--checkBox"><input type="radio" id="red" name="palette" /></label>
-                                    <li class="div2__palette--darkRed div2__palette--list"></li>
-                                    <li class="div2__palette--mediumRed div2__palette--list"></li>
-                                    <li class="div2__palette--lightRed div2__palette--list"></li>
-                                </ul>
-                            </div>
-                            <div class="div2">
-                                <ul class="div2__palette">
-                                    <label class="div2__palette--checkBox"><input type="radio" id="random" name="palette" /></label>
-                                    <li class="div2__palette--greenThree div2__palette--list"></li>
-                                    <li class="div2__palette--yellowThree div2__palette--list"></li>
-                                    <li class="div2__palette--greyThree div2__palette--list"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="line"></p>
-
-
+                  </div>
+                  <p class="line"></p>
                 </fieldset>
+
                 <fieldset class="fill">
                   <div class="fill__container">
                     <i class="fa-regular fa-keyboard fill__container--icon"></i>
                     <legend class="fill__container--legend">rellena</legend>
                     <i
-                      class="fa-solid fa-chevron-down fill__container--arrow js-arrow js-arrow-fill"
+                      class="fa-solid fa-chevron-down fill__container--arrow js-arrow js-arrow-fill-down"
                     ></i>
-                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
-                    <!-- o transform rotate 180 -->
+                    <i
+                      class="fa-solid fa-chevron-up fill__container--arrow js-arrow js-arrow-fill-up collapsed"
+                    ></i>
                   </div>
 
                   <div class="js-fill collapsed">
@@ -178,9 +188,11 @@
                     <i class="fa-icon fa-solid fa-share-nodes share__div--icon"></i>
                     <legend class="share__div--legend">comparte</legend>
                     <i
-                      class="fa-solid fa-chevron-down share__div--arrow js-arrow js-arrow-share"
+                      class="fa-solid fa-chevron-up share__div--arrow js-arrow js-arrow-share-up collapsed"
                     ></i>
-                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                    <i
+                      class="fa-solid fa-chevron-down share__div--arrow js-arrow js-arrow-share-down"
+                    ></i>
                   </div>
 
                   <button class="share__button js-btn-create collapsed">
