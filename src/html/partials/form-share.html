@@ -1,27 +1,34 @@
 <fieldset class="share">
+  <div class="share__div">
+    <i class="fa-icon fa-solid fa-share-nodes share__div--icon"></i>
+    <legend class="share__div--legend">comparte</legend>
+    <i
+      class="fa-solid fa-chevron-down share__div--arrow js-arrow js-arrow-share"
+    ></i>
+    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+  </div>
 
-    <div class="share__div">
-        <i class="fa-icon fa-solid fa-share-nodes share__div--icon"></i>
-        <legend class="share__div--legend">comparte</legend>
-        <i class="fa-solid fa-chevron-up share__div--arrow js-arrow js-arrow-share"></i>
-        <!-- <i class="fa-solid fa-chevron-down"></i> -->
+  <button class="share__button js-btn-create collapsed">
+    <i class="fa-regular fa-address-card share__button--icon"></i>
+    crear tarjeta
+  </button>
+
+  <div class="share__card">
+    <h2 class="share__card--title">La tarjeta ha sido creada:</h2>
+    <a class="share__card--url" href=""
+      >https://awesome-profile-card.com id=A456DF0001</a
+    >
+
+    <div class="share__twitter">
+      <a
+        class="share__twitter--twit twitter-share-button"
+        href="https://twitter.com/intent/tweet"
+        target="_blank"
+      >
+        <i class="fa-brands fa-twitter twitter-share-button__icon"></i>
+        Compartir en twitter
+      </a>
     </div>
-
-    <button class="share__button js-btn-create collapsed">
-        <i class="fa-regular fa-address-card share__button--icon"></i>
-        crear tarjeta
-    </button>
-
-    <div class="share__card">
-        <h2 class="share__card--title">La tarjeta ha sido creada:</h2>
-        <a class="share__card--url" href="">https://awesome-profile-card.com id=A456DF0001</a>
-        
-        <div class="share__twitter">
-            <a class=" share__twitter--twit twitter-share-button" href="https://twitter.com/intent/tweet" target="_blank">
-                <i class="fa-brands fa-twitter twitter-share-button__icon"></i>
-                Compartir en twitter
-            </a>
-        </div>
-        <p class="line"></p>
-    </div>
+    <p class="line"></p>
+  </div>
 </fieldset>

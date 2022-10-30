@@ -22,15 +22,17 @@ function handleClick(event) {
     design.classList.toggle('collapsed');
     fill.classList.add('collapsed');
     btnCreate.classList.add('collapsed');
+    arrowDesign.classList.add('arrow-design-rotate');
   }else if (event.target.classList.contains('js-arrow-fill')) {
     fill.classList.toggle('collapsed');
-    arrowFill.classList.toggle('arrow-fill-rotate');
+    arrowFill.classList.add('arrow-fill-rotate');
     design.classList.add('collapsed');
     btnCreate.classList.add('collapsed');
   }else if (event.target.classList.contains('js-arrow-share')) {
     btnCreate.classList.toggle('collapsed');
     design.classList.add('collapsed');
     fill.classList.add('collapsed');
+    arrowShare.classList.add('arrow-fill-rotate');
   }
 }
 
