@@ -109,3 +109,17 @@
 .fa-github-alt {
   font-size: 18px;
 }
+
+.palette2{
+  border-left: solid 5px lightcoral;
+  .card-text-name{
+    color:lightblue;
+  }
+  .card-text-job{
+    color: violet;
+  }
+  .social-media-icon{
+    color: lightcoral;
+    border: lightseagreen solid 2px;
+  }
+}
