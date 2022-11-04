@@ -1,1 +1,1 @@
-.create{width:100vw;background-image:linear-gradient(#f5f5f5, white)}@media all and (min-width: 768px){.create{display:flex;flex-direction:row-reverse;align-items:flex-start;justify-content:center}}.collapsed{display:none}
+.create{width:100vw;background-image:linear-gradient(#f5f5f5, white)}@media all and (min-width: 768px){.create{display:flex;flex-direction:row-reverse;align-items:flex-start;justify-content:center;gap:20px}}.collapsed{display:none}
