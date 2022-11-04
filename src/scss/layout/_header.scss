@@ -10,9 +10,13 @@
         margin-left: auto;
         margin-right: auto;
     }
-    &__img{
-        width: 201px;
-        margin: 31px 79px 30px 40px;
+    &__link{
+        
+
+        &--img{
+            width: 201px;
+            margin: 31px 79px 30px 40px;
+        }
     }
     &__title{
         display: none;
