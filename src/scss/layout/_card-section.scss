@@ -6,22 +6,17 @@
   flex-direction: column;
   align-items: center;
   @media all and (min-width: 768px) {
-    height: 80vh;
+    height: inherit;
     width: 329px;
     margin-top: 20px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     border-radius: 6px;
   }
   @media all and (min-width: 1024px) {
-    height: 80vh;
     width: 585px;
     margin-top: 20px;
-    margin-right: 40px;
-    border-radius: 6px;
   }
 
-
-  
 }
 
 .reset {
