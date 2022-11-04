@@ -4,24 +4,20 @@
 const palette1 = document.querySelector('.js-palette1');
 const palette2 = document.querySelector('.js-palette2');
 const palette3 = document.querySelector('.js-palette3');
-//tarjeta
-// const card = document.querySelector('js-preview-card');
-// const header = document.querySelector('js-preview-header'); //rayita de la izquierda (borde)
-/////texto header card
-// const name = document.querySelector('js-preview-name');
-// const job = document.querySelector('js-preview-job');
-// const icon = document.querySelector('js-icon');
+const card = document.querySelector('.js-preview-card');
+
+//////////Funciones///////////
+const functionEventPalettes = (event) => {
+  console.log(event);
+  card.classList.remove('js-palette1');
+  card.classList.remove('js-palette2');
+  card.classList.remove('js-palette3');
+  card.classList.add(event.currentTarget.value);
+};
 
 /////////Eventos///////////
-palette1.addEventListener('click', (event) => {
-  event.preventDefault();
-  console.log('hola'); //preguntar evento click en label o input
-});
+palette1.addEventListener('click', functionEventPalettes);
 
-palette2.addEventListener('click', () => {
-console.log(palette2);
-});
+palette2.addEventListener('click', functionEventPalettes);
 
-palette3.addEventListener('click', () => {
-console.log(palette3);
-});
+palette3.addEventListener('click', functionEventPalettes);

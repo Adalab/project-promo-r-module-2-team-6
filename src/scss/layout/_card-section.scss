@@ -19,9 +19,6 @@
     margin-right: 40px;
     border-radius: 6px;
   }
-
-
-  
 }
 
 .reset {
@@ -116,4 +113,43 @@
 .fa-linkedin-in,
 .fa-github-alt {
   font-size: 18px;
+}
+
+.js-palette1 {
+  .card-text {
+    border-left: solid 5px $mediumGreen;
+    .card-text-name {
+      color: $darkGreen;
+    }
+  }
+  .social-media-icon {
+    color: $darkGreen;
+    border: solid 2px $lightGreen;
+  }
+}
+
+.js-palette2 {
+  .card-text {
+    border-left: solid 5px $mediumRed;
+    .card-text-name {
+      color: $darkRed;
+    }
+  }
+  .social-media-icon {
+    color: $darkRed;
+    border: solid 2px $lightRed;
+  }
+}
+
+.js-palette3 {
+  .card-text {
+    border-left: solid 5px $yellowThree;
+    .card-text-name {
+      color: $greenThree;
+    }
+  }
+  .social-media-icon {
+    color: $greenThree;
+    border: solid 2px $greyThree;
+  }
 }
