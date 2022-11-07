@@ -10,10 +10,10 @@
     "github": "mariagar",
     "photo": "data:image/png;base64,2342ba..."
   } */
-let name = '';
+
 nameInput.addEventListener('input',()=> {
   
-  name= nameInput.value;
+  let name= nameInput.value;
   console.log(name);
 
   if(name===''){
