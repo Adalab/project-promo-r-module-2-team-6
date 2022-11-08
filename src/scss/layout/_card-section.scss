@@ -1,5 +1,5 @@
 .card-section {
-  height: 457px;
+ /*  height: 457px; */
   background-image: linear-gradient(#bfcdd0, #dde9ed);
   padding: 42px 35px 40px 45px;
   display: flex;
@@ -9,15 +9,12 @@
     height: 80vh;
     width: 329px;
     margin-top: 20px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     border-radius: 6px;
   }
   @media all and (min-width: 1024px) {
-    height: 80vh;
     width: 585px;
     margin-top: 20px;
-    margin-right: 40px;
-    border-radius: 6px;
   }
 }
 
