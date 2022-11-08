@@ -19,12 +19,11 @@
                 font-family: $mainFont;
                 font-weight: 600;
                 color: $greyMetal;
+                padding-right: 137px;
             }
             &--arrow{
                 font-size: 18px;
                 color: $greyMetal;
-                padding-left: 137px;
-                
             }
     }
     &__button{
@@ -98,6 +97,3 @@
     width: 280px;
     border-top: 1px solid #d8d8d8;
 }
-/* .arrow-share-rotate{
-    transform: rotate(180deg);
-  } */

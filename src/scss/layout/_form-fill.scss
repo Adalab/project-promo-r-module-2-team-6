@@ -48,7 +48,6 @@
     &--arrow {
       font-size: 18px;
       color: $greyMetal;
-      /* transform: rotate(180deg); */
     }
   }
   &__name {
@@ -109,8 +108,4 @@
     align-items: flex-start;
     margin-bottom: 30px;
   }
-}
-
-.arrow-fill-rotate{
-  transform: rotate(180deg);
 }

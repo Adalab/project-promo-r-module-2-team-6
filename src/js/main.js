@@ -9,49 +9,46 @@
 
 //variables
 //partes cuestionario
-const design = document.querySelector('.js-design');
+
+//form-fill
 const fill =  document.querySelector('.js-fill');
-const btnCreate =  document.querySelector('.js-btn-create');
-//flechas
-const arrowDesignUp = document.querySelector('.js-arrow-design-up');
-const arrowFillUp = document.querySelector('.js-arrow-fill-up');
-const arrowShareUp = document.querySelector('.js-arrow-share-up');
-const arrowDesignDown = document.querySelector('.js-arrow-design-down');
-const arrowFillDown = document.querySelector('.js-arrow-fill-down');
-const arrowShareDown = document.querySelector('.js-arrow-share-down');
+const arrowFill = document.querySelector('.js-arrow-fill');
+
+//form-design
+const design =  document.querySelector('.js-design');
+const arrowDesign= document.querySelector('.js-arrow-design');
+
+//form-share
+const share =  document.querySelector('.js-btn-create');
+const arrowShare = document.querySelector('.js-arrow-share');
+
+//arrow
+const form = document.querySelectorAll('.js-form');
 
 //funciones
 function handleClick(event) {
   event.preventDefault();
-  if (event.target.classList.contains('js-arrow-design-up') || event.target.classList.contains('js-arrow-design-down')) {
-    design.classList.toggle('collapsed');
-    fill.classList.add('collapsed');
-    btnCreate.classList.add('collapsed');
-    //flechas
-    arrowDesignUp.classList.toggle('collapsed');
-    arrowDesignDown.classList.toggle('collapsed');
-  }else if (event.target.classList.contains('js-arrow-fill-up') || event.target.classList.contains('js-arrow-fill-down')) {
+  console.log(event.)
+  if (event.target.classList.contains('js-arrow-fill')){
     fill.classList.toggle('collapsed');
     design.classList.add('collapsed');
-    btnCreate.classList.add('collapsed');
-    //flechas
-    arrowFillUp.classList.toggle('collapsed');
-    arrowFillDown.classList.toggle('collapsed');
-  }else if (event.target.classList.contains('js-arrow-share-up') || event.target.classList.contains('js-arrow-share-down')) {
-    btnCreate.classList.toggle('collapsed');
+    share.classList.add('collapsed');
+
+  }else if (event.target.classList.contains('js-arrow-design')){
+    design.classList.toggle('collapsed');
+    fill.classList.add('collapsed');
+    share.classList.add('collapsed');
+
+  }else if (event.target.classList.contains('js-arrow-share')){
+    share.classList.toggle('collapsed');
     design.classList.add('collapsed');
     fill.classList.add('collapsed');
-    //flechas
-    arrowShareUp.classList.toggle('collapsed');
-    arrowShareDown.classList.toggle('collapsed');
-  }
+
 }
 
 //eventos
-arrowDesignUp.addEventListener('click', handleClick);
-arrowFillUp.addEventListener('click', handleClick);
-arrowShareUp.addEventListener('click', handleClick);
+// arrowFill.addEventListener('click', handleClick);
+// arrowDesign.addEventListener('click', handleClick);
+// arrowShare.addEventListener('click', handleClick);
 
-arrowDesignDown.addEventListener('click', handleClick);
-arrowFillDown.addEventListener('click', handleClick);
-arrowShareDown.addEventListener('click', handleClick);
+form.addEventListener('click', handleClick);
