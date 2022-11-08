@@ -24,22 +24,21 @@ const form = document.querySelector ('.js-form');
 //funciones
 function handleClick(event) {
   event.preventDefault();
-  console.log(event.target);
-  console.log(event.currentTarget);
+ /*  console.log(event.target);
+  console.log(event.currentTarget); */
 
   if (event.target.classList.contains('js-arrow-design-up') || event.target.classList.contains('js-arrow-design-down')) {
     design.classList.toggle('collapsed');
     fill.classList.add('collapsed');
     btnCreate.classList.add('collapsed');
     //flechas
-    console.log('Mari');
+
     arrowDesignUp.classList.toggle('collapsed');
     arrowDesignDown.classList.toggle('collapsed');
   }else if (event.target.classList.contains('js-arrow-fill-up') || event.target.classList.contains('js-arrow-fill-down')) {
     fill.classList.toggle('collapsed');
     design.classList.add('collapsed');
     btnCreate.classList.add('collapsed');
-    console.log('Carmen');
     //flechas
     arrowFillUp.classList.toggle('collapsed');
     arrowFillDown.classList.toggle('collapsed');
@@ -48,7 +47,6 @@ function handleClick(event) {
     design.classList.add('collapsed');
     fill.classList.add('collapsed');
     //
-    console.log('De los santos');
     arrowShareUp.classList.toggle('collapsed');
     arrowShareDown.classList.toggle('collapsed');
   }

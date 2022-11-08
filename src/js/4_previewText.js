@@ -11,14 +11,15 @@
     "photo": "data:image/png;base64,2342ba..."
   } */
 
-  const data = {
-    palette: '',
-    name:'',
-    job: '',
-    email: '',
-    linkedin: '',
-    github:'',
-  };
+const data = {
+  palette: '',
+  name:'',
+  job: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github:'',
+};
 
 // const nameInput = document.querySelector ('.js-name');
 // const jobInput = document.querySelector ('.js-job');
@@ -32,15 +33,51 @@ const fillForm= document.querySelector('.fill');
 const previewName = document.querySelector ('.js-preview-name');
 const previewJob = document.querySelector ('.js-preview-job');
 
+const linkedinIcon = document.querySelector ('.js-linkedin-icon');
+const githubIcon = document.querySelector ('.js-github-icon');
+const phoneIcon = document.querySelector ('.js-phone-icon');
+
+function getData(selectedInput){
+  if (selectedInput.name === 'name'){
+    data.name = selectedInput.value;
+  }else if(selectedInput.name === 'job'){
+    data.job = selectedInput.value;
+  }else if(selectedInput.name === 'email'){
+    data.email = selectedInput.value;
+  }else if(selectedInput.name === 'phone'){
+    data.phone = selectedInput.value;
+  }else if(selectedInput.name === 'github'){
+    data.github = selectedInput.value;
+  }else if(selectedInput.name === 'linkedin'){
+    data.linkedin = selectedInput.value;
+  }
+}
+
+function updateCard() {
+  if(data.name===''){
+    previewName.innerHTML='Nombre Apellido';
+  }else{
+    previewName.innerHTML=data.name;
+    console.log(data.name);
+  }
+  if(data.job===''){
+    previewJob.innerHTML='Front-end developer';
+  }else{
+    previewJob.innerHTML=data.job;
+    console.log(data.job);
+  }
+  linkedinIcon.href = data.linkedin;
+  githubIcon.href = data.github;
+}
 
 
 function handleInput (event) {
   event.preventDefault();
-  const selectedInput = event.target.name;
-  console.log(selectedInput);
-  if (selectedInput === 'name'){
-    data.name = event.target.value;
-  }
+  const selectedInput = event.target;
+  getData(selectedInput);
+  console.log(data);
+  updateCard();
+
 }
 
 fillForm.addEventListener('input', handleInput);
