@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 const nameInput = document.querySelector ('.js-name');
 const jobInput = document.querySelector ('.js-job');
@@ -10,3 +11,8 @@ const previewName = document.querySelector ('.js-preview-name');
 const previewJob = document.querySelector ('.js-preview-job');
 
 
+=======
+'use strict';
+
+
+>>>>>>> form

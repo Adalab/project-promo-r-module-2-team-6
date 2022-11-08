@@ -19,15 +19,20 @@ const arrowShareUp = document.querySelector('.js-arrow-share-up');
 const arrowDesignDown = document.querySelector('.js-arrow-design-down');
 const arrowFillDown = document.querySelector('.js-arrow-fill-down');
 const arrowShareDown = document.querySelector('.js-arrow-share-down');
+const form = document.querySelector ('.js-form');
 
 //funciones
 function handleClick(event) {
   event.preventDefault();
+ /*  console.log(event.target);
+  console.log(event.currentTarget); */
+
   if (event.target.classList.contains('js-arrow-design-up') || event.target.classList.contains('js-arrow-design-down')) {
     design.classList.toggle('collapsed');
     fill.classList.add('collapsed');
     btnCreate.classList.add('collapsed');
     //flechas
+
     arrowDesignUp.classList.toggle('collapsed');
     arrowDesignDown.classList.toggle('collapsed');
   }else if (event.target.classList.contains('js-arrow-fill-up') || event.target.classList.contains('js-arrow-fill-down')) {
@@ -41,17 +46,18 @@ function handleClick(event) {
     btnCreate.classList.toggle('collapsed');
     design.classList.add('collapsed');
     fill.classList.add('collapsed');
-    //flechas
+    //
     arrowShareUp.classList.toggle('collapsed');
     arrowShareDown.classList.toggle('collapsed');
   }
 }
 
 //eventos
-arrowDesignUp.addEventListener('click', handleClick);
+/* arrowDesignUp.addEventListener('click', handleClick);
 arrowFillUp.addEventListener('click', handleClick);
 arrowShareUp.addEventListener('click', handleClick);
 
 arrowDesignDown.addEventListener('click', handleClick);
 arrowFillDown.addEventListener('click', handleClick);
-arrowShareDown.addEventListener('click', handleClick);
+arrowShareDown.addEventListener('click', handleClick); */
+form.addEventListener('click', handleClick);
