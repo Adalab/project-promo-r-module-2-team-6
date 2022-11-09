@@ -28,7 +28,7 @@
 
     <main class="create">
         <section class="card-section">
-          <button class="reset">
+          <button class="reset js-reset">
             <i class="reset-icon fa-regular fa-trash-can"></i>
             <p class="reset-text">reset</p>
           </button>
@@ -37,24 +37,31 @@
               <h2 class="card-text-name js-preview-name">nombre apellido</h2>
               <p class="card-text-job js-preview-job">front-end developer</p>
             </div>
-            <img src="./assets/images/card_sample_pic_crop.jpg" alt="card picture" class="card-image" title="card picture" />
+            <img
+              src="./assets/images/card_sample_pic_crop.jpg"
+              alt="card picture"
+              class="card-image"
+              title="card picture"
+            />
             <div class="social-media">
-              <a href="#" class="social-media-icon">
-                <i class="fa-solid fa-mobile-screen-button"></i></a>
-              <a href="#" class="social-media-icon">
+              <a href="#" class="social-media-icon js-phone-icon" target="_blank">
+                <i class="fa-solid fa-mobile-screen-button"></i
+              ></a>
+              <a href="#" class="social-media-icon js-email-icon" target="_blank">
                 <i class="fa-regular fa-envelope"></i>
               </a>
-              <a href="#" class="social-media-icon">
+              <a href="#" class="social-media-icon js-linkedin-icon" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="#" class="social-media-icon">
+              <a href="#" class="social-media-icon js-github-icon" target="_blank">
                 <i class="fa-brands fa-github-alt"></i>
               </a>
             </div>
           </article>
         </section>
+
         <section>
-          <form method="post">
+          <form class="js-form" method="post">
             <fieldset class="design">
               <div class="design__div">
                 <i class="fa-solid fa-object-ungroup design__div--icon"></i>
@@ -118,7 +125,7 @@
                     type="text"
                     name="name"
                     id="name"
-                    class="fill__name--inputName input js-name"
+                    class="fill__name--inputName input js-name js-input"
                     placeholder="Ej: Sally Jill"
                     required
                   />
@@ -129,7 +136,7 @@
                     type="text"
                     id="job"
                     name="job"
-                    class="fill__job--inputJob input js-job"
+                    class="fill__job--inputJob input js-job js-input"
                     placeholder="Ej: Front-end unicorn"
                     required
                   />
@@ -141,7 +148,7 @@
                   <input
                     type="button"
                     id="img"
-                    class="fill__img--inputImg input"
+                    class="fill__img--inputImg input js-input"
                     value="Añadir imagen"
                   />
                 </div>
@@ -151,7 +158,7 @@
                     type="email"
                     name="email"
                     id="email"
-                    class="fill__email--inputEmail input js-email"
+                    class="fill__email--inputEmail input js-email js-input"
                     placeholder="sally-hill@gmail.com"
                   />
                 </div>
@@ -161,7 +168,7 @@
                     type="tel"
                     name="phone"
                     id="phone"
-                    class="fill__tel--inputTel input js-phone"
+                    class="fill__tel--inputTel input js-phone js-input"
                     placeholder="Ej: 555-55-55-55"
                   />
                 </div>
@@ -173,7 +180,7 @@
                     type="text"
                     name="linkedin"
                     id="linkedin"
-                    class="fill__linkedin--inputLinkedin input js-linkedin"
+                    class="fill__linkedin--inputLinkedin input js-linkedin js-input"
                     placeholder="http://linkedin.com/in/sally.hill"
                   />
                 </div>
@@ -183,7 +190,7 @@
                     type="text"
                     name="github"
                     id="github"
-                    class="fill__git--inputGit input js-github"
+                    class="fill__git--inputGit input js-github js-input"
                     placeholder="Ej: @sally-hill"
                   />
                 </div>
