@@ -36,6 +36,7 @@ const previewJob = document.querySelector ('.js-preview-job');
 const linkedinIcon = document.querySelector ('.js-linkedin-icon');
 const githubIcon = document.querySelector ('.js-github-icon');
 const phoneIcon = document.querySelector ('.js-phone-icon');
+const emailIcon = document.querySelector ('.js-email-icon');
 
 function getData(selectedInput){
   if (selectedInput.name === 'name'){
@@ -66,6 +67,8 @@ function updateCard() {
     previewJob.innerHTML=data.job;
     console.log(data.job);
   }
+  phoneIcon.href = `tel:+34${data.phone}`;
+  emailIcon.href = `mailto:${data.email}`;
   linkedinIcon.href = data.linkedin;
   githubIcon.href = data.github;
 }
