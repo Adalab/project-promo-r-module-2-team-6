@@ -13,7 +13,6 @@ const functionEventPalettes = (event) => {
   card.classList.remove('js-palette2');
   card.classList.remove('js-palette3');
   card.classList.add(event.currentTarget.value);
-  console.log(event.currentTarget.value);
   if (event.currentTarget.value === 'js-palette1'){
     imgCard.src = "./assets/images/adalaber.jpg";
   } else if (event.currentTarget.value === 'js-palette2') {

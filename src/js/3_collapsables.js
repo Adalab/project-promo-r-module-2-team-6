@@ -20,7 +20,6 @@ const form = document.querySelector ('.js-form');
 
 //funciones
 function handleClick(event) {
-  event.preventDefault();
   /*  console.log(event.target);
   console.log(event.currentTarget); */
 
