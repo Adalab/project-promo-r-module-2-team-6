@@ -1,5 +1,5 @@
 .card-section {
- /*  height: 457px; */
+  /*  height: 457px; */
   background-image: linear-gradient(#bfcdd0, #dde9ed);
   padding: 42px 35px 40px 45px;
   display: flex;
@@ -57,12 +57,12 @@
 
   &-text {
     height: 42px;
-    border-left: solid 5px $mediumGreen;
+    border-left: solid 5px #6acdcc;
     font-family: $cardFont;
     margin-bottom: 10px;
 
     &-name {
-      color: $darkGreen;
+      color: #716652;
       font-weight: 700;
       font-size: 18px;
       text-transform: capitalize;
@@ -82,6 +82,7 @@
   }
 
   &-image {
+
     width: 240px;
     height: 200px;
   }
@@ -96,8 +97,8 @@
     text-align: center;
     width: 32px;
     height: 32px;
-    color: $darkGreen;
-    border: $lightGreen solid 2px;
+    color: #716652;
+    border: #f0b852 solid 2px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -114,39 +115,39 @@
 
 .js-palette1 {
   .card-text {
-    border-left: solid 5px $mediumGreen;
+    border-left: solid 5px #6acdcc;
     .card-text-name {
-      color: $darkGreen;
+      color: #716652;
     }
   }
   .social-media-icon {
-    color: $darkGreen;
-    border: solid 2px $lightGreen;
+    color: #716652;
+    border: solid 2px #f0b852;
   }
 }
 
 .js-palette2 {
   .card-text {
-    border-left: solid 5px $mediumRed;
+    border-left: solid 5px #555c1c;
     .card-text-name {
-      color: $darkRed;
+      color: #dea21a;
     }
   }
   .social-media-icon {
-    color: $darkRed;
-    border: solid 2px $lightRed;
+    color: #dea21a;
+    border: solid 2px #b94111;
   }
 }
 
 .js-palette3 {
   .card-text {
-    border-left: solid 5px $yellowThree;
+    border-left: solid 5px #921c25;
     .card-text-name {
-      color: $greenThree;
+      color: #ff0000;
     }
   }
   .social-media-icon {
-    color: $greenThree;
-    border: solid 2px $greyThree;
+    color: #ff0000;
+    border: solid 2px #181d11;
   }
 }
