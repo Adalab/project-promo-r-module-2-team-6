@@ -94,6 +94,15 @@
     border-radius: 21px;
     text-transform: uppercase;
     background-color: $mediumGreen;
+    color: white;
+    /* transition: width 200ms, background-color 150ms, border 150ms, color 150ms;
+
+    &:hover {
+        width: 11.8rem;
+        background-color: white;
+        border: solid $mediumGreen 2px;
+        color: $mediumGreen;
+    } */
     @media all and (min-width: 768px) {
       margin: 186px 0 59px 0;
     }
