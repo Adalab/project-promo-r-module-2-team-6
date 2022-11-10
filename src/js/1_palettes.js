@@ -8,11 +8,13 @@ const card = document.querySelector('.js-preview-card');
 
 //////////Funciones///////////
 const functionEventPalettes = (event) => {
-  console.log(event);
+  /* event.currentTarget.setAttribute('checked',''); */
   card.classList.remove('js-palette1');
   card.classList.remove('js-palette2');
   card.classList.remove('js-palette3');
   card.classList.add(event.currentTarget.value);
+  console.log(event.currentTarget.value);
+  
 };
 
 /////////Eventos///////////

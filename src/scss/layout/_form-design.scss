@@ -105,6 +105,18 @@
   margin-top: 10px;
 }
 
-/* .arrow-design-rotate{
+.shield-rotate{
   transform: rotate(180deg);
+} 
+/* .input[type="radio"]{
+  -webkit-appearance: radio;
 } */
+
+.fa-shield {
+  color: $mainOrange;
+  font-size: 20px;
+}
+
+.fa-shield-up {
+  transform: rotate(180deg);
+}
