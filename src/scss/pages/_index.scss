@@ -1,3 +1,12 @@
+@keyframes bounce {
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-15%); }
+  90% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -89,6 +98,7 @@
     }
   }
   &__start {
+    animation: bounce 2s ease infinite;
     display: flex;
     margin: 38px 101px 30px 90px;
     border-radius: 21px;
