@@ -1,12 +1,12 @@
 .card-section {
-  /*  height: 457px; */
+  height: 457px;
   background-image: linear-gradient(#bfcdd0, #dde9ed);
   padding: 42px 35px 40px 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media all and (min-width: 768px) {
-    height: 80vh;
+    min-height: 850px;
     width: 329px;
     margin-top: 20px;
     /* margin-right: 40px; */
