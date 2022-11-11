@@ -19,12 +19,9 @@
   }
 
   &__logo {
-    width: 103px;
     height: 40px;
     margin: 12px 47px 20px 48px;
     @media all and (min-width: 768px) {
-      width: 103px;
-      height: 40px;
       margin: 10px 40px 10px 0;
     }
   }

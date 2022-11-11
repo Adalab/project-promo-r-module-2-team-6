@@ -26,12 +26,15 @@ for (let i = 0; i < 6; i++) {
 }; */
 
   for (const input of inputs) {
-    input.value = "";
-    input.href = "";
-    getData(input);
-    updateCard();
+    if (!input.classList.contains('fill__img--inputImg')){
+      input.value = '';
+      input.href = '';
+      getData(input);
+      updateCard();
+    }
+    
   }
   console.log(data);
 }
 
-btnReset.addEventListener("click", handleReset);
+btnReset.addEventListener('click', handleReset);
