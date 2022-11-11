@@ -29,40 +29,40 @@ function handleClick(event) {
     btnCreate.classList.add('collapsed');
     //flechas
 
-    arrowDesignUp.classList.add('collapsed');
-    arrowDesignDown.classList.remove('collapsed');
+    arrowDesignUp.classList.remove('collapsed');
+    arrowDesignDown.classList.add('collapsed');
 
-    arrowFillUp.classList.remove('collapsed');
-    arrowFillDown.classList.add('collapsed');
+    arrowFillUp.classList.add('collapsed');
+    arrowFillDown.classList.remove('collapsed');
 
-    arrowShareUp.classList.remove('collapsed');
-    arrowShareDown.classList.add('collapsed');
+    arrowShareUp.classList.add('collapsed');
+    arrowShareDown.classList.remove('collapsed');
   }else if (event.target.classList.contains('js-arrow-fill-up') || event.target.classList.contains('js-arrow-fill-down')) {
     fill.classList.remove('collapsed');
     design.classList.add('collapsed');
     btnCreate.classList.add('collapsed');
     //flechas
-    arrowFillUp.classList.add('collapsed');
-    arrowFillDown.classList.remove('collapsed');
+    arrowFillUp.classList.remove('collapsed');
+    arrowFillDown.classList.add('collapsed');
 
-    arrowShareUp.classList.remove('collapsed');
-    arrowShareDown.classList.add('collapsed');
+    arrowShareUp.classList.add('collapsed');
+    arrowShareDown.classList.remove('collapsed');
 
-    arrowDesignUp.classList.remove('collapsed');
-    arrowDesignDown.classList.add('collapsed');
+    arrowDesignUp.classList.add('collapsed');
+    arrowDesignDown.classList.remove('collapsed');
   }else if (event.target.classList.contains('js-arrow-share-up') || event.target.classList.contains('js-arrow-share-down')) {
     btnCreate.classList.remove('collapsed');
     design.classList.add('collapsed');
     fill.classList.add('collapsed');
     //
-    arrowShareUp.classList.add('collapsed');
-    arrowShareDown.classList.remove('collapsed');
+    arrowShareUp.classList.remove('collapsed');
+    arrowShareDown.classList.add('collapsed');
 
-    arrowDesignUp.classList.remove('collapsed');
-    arrowDesignDown.classList.add('collapsed');
+    arrowDesignUp.classList.add('collapsed');
+    arrowDesignDown.classList.remove('collapsed');
 
-    arrowFillUp.classList.remove('collapsed');
-    arrowFillDown.classList.add('collapsed');
+    arrowFillUp.classList.add('collapsed');
+    arrowFillDown.classList.remove('collapsed');
   }
 }
 
