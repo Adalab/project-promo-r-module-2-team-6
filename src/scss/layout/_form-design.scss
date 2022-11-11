@@ -69,32 +69,35 @@
       width: 30px;
       height: 25px;
     }
+    //first palettte -WonderAdalaber
     &--darkGreen {
-      background-color: $darkGreen;
+      background-color: #716652;
     }
     &--mediumGreen {
-      background-color: $mediumGreen;
+      background-color: #6acdcc;
     }
     &--lightGreen {
-      background-color: $lightGreen;
+      background-color: #f0b852;
     }
+    //second palette - Front-end
     &--darkRed {
-      background-color: $darkRed;
+      background-color: #dea21a;
     }
     &--mediumRed {
-      background-color: $mediumRed;
+      background-color: #555c1c;
     }
     &--lightRed {
-      background-color: $lightRed;
+      background-color: #b94111;
     }
+    //third palette- Back-end
     &--greenThree {
-      background-color: $greenThree;
+      background-color: #ff0000;
     }
     &--yellowThree {
-      background-color: $yellowThree;
+      background-color: #921c25;
     }
     &--greyThree {
-      background-color: $greyThree;
+      background-color: #181d11;
     }
   }
 }
@@ -105,6 +108,18 @@
   margin-top: 10px;
 }
 
-/* .arrow-design-rotate{
+/* .shield-rotate{
   transform: rotate(180deg);
+}  */
+/* .input[type="radio"]{
+  -webkit-appearance: radio;
 } */
+
+.fa-shield {
+  color: $mainOrange;
+  font-size: 20px;
+}
+
+.fa-shield-up {
+  transform: rotate(180deg);
+}

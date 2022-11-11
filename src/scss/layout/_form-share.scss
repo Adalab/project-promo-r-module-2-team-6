@@ -19,11 +19,12 @@
                 font-family: $mainFont;
                 font-weight: 600;
                 color: $greyMetal;
-                padding-right: 137px;
+                padding-right: 140px;
             }
             &--arrow{
                 font-size: 18px;
                 color: $greyMetal;
+      
             }
     }
     &__button{
@@ -97,3 +98,11 @@
     width: 280px;
     border-top: 1px solid #d8d8d8;
 }
+
+.fa-shield {
+    color: $mainOrange;
+    font-size: 20px;
+  }
+/* .arrow-share-rotate{
+    transform: rotate(180deg);
+  } */

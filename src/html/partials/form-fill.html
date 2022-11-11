@@ -3,7 +3,10 @@
     <i class="fa-regular fa-keyboard fill__container--icon"></i>
     <legend class="fill__container--legend">rellena</legend>
     <i
-      class="fa-solid fa-chevron-down fill__container--arrow js-arrow js-arrow-fill"
+      class="fa fa-shield fill__container--arrow js-arrow js-arrow-fill-down"
+    ></i>
+    <i
+      class="fa fa-shield fa-shield-up fill__container--arrow js-arrow js-arrow-fill-up collapsed"
     ></i>
   </div>
 
@@ -14,9 +17,11 @@
       >
       <input
         type="text"
+        name="name"
         id="name"
-        class="fill__name--inputName input"
+        class="fill__name--inputName input js-name js-input"
         placeholder="Ej: Sally Jill"
+        required
       />
     </div>
     <div class="fill__job">
@@ -24,8 +29,10 @@
       <input
         type="text"
         id="job"
-        class="fill__job--inputJob input"
+        name="job"
+        class="fill__job--inputJob input js-job js-input"
         placeholder="Ej: Front-end unicorn"
+        required
       />
     </div>
     <div class="fill__img">
@@ -35,7 +42,7 @@
       <input
         type="button"
         id="img"
-        class="fill__img--inputImg input"
+        class="fill__img--inputImg input js-input"
         value="Añadir imagen"
       />
     </div>
@@ -43,17 +50,19 @@
       <label class="fill__email--label text-label" for="email">email</label>
       <input
         type="email"
+        name="email"
         id="email"
-        class="fill__email--inputEmail input"
+        class="fill__email--inputEmail input js-email js-input"
         placeholder="sally-hill@gmail.com"
       />
     </div>
     <div class="fill__tel">
-      <label class="fill__tel--label text-label" for="tel">teléfono</label>
+      <label class="fill__tel--label text-label" for="phone">teléfono</label>
       <input
         type="tel"
-        id="tel"
-        class="fill__tel--inputTel input"
+        name="phone"
+        id="phone"
+        class="fill__tel--inputTel input js-phone js-input"
         placeholder="Ej: 555-55-55-55"
       />
     </div>
@@ -63,17 +72,19 @@
       >
       <input
         type="text"
+        name="linkedin"
         id="linkedin"
-        class="fill__linkedin--inputLinkedin input"
+        class="fill__linkedin--inputLinkedin input js-linkedin js-input"
         placeholder="http://linkedin.com/in/sally.hill"
       />
     </div>
     <div class="fill__git">
-      <label class="fill__git--label text-label" for="git">github</label>
+      <label class="fill__git--label text-label" for="github">github</label>
       <input
-        type="git"
-        id="git"
-        class="fill__git--inputGit input"
+        type="text"
+        name="github"
+        id="github"
+        class="fill__git--inputGit input js-github js-input"
         placeholder="Ej: @sally-hill"
       />
     </div>

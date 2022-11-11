@@ -1,19 +1,21 @@
 .card-section {
-  height: 457px;
+  /*  height: 457px; */
   background-image: linear-gradient(#bfcdd0, #dde9ed);
   padding: 42px 35px 40px 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
   @media all and (min-width: 768px) {
-    height: 812px;
-    width: 585px;
+    height: 80vh;
+    width: 329px;
     margin-top: 20px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     border-radius: 6px;
   }
-
-  
+  @media all and (min-width: 1024px) {
+    width: 585px;
+    margin-top: 20px;
+  }
 }
 
 .reset {
@@ -30,7 +32,7 @@
   position: relative;
   right: 80px;
   @media all and (min-width: 768px) {
-    margin-top: 173px;
+    margin-top: 140px;
   }
 
   &-icon {
@@ -55,12 +57,12 @@
 
   &-text {
     height: 42px;
-    border-left: solid 5px $mediumGreen;
+    border-left: solid 5px #6acdcc;
     font-family: $cardFont;
     margin-bottom: 10px;
 
     &-name {
-      color: $darkGreen;
+      color: #716652;
       font-weight: 700;
       font-size: 18px;
       text-transform: capitalize;
@@ -80,6 +82,7 @@
   }
 
   &-image {
+
     width: 240px;
     height: 200px;
   }
@@ -94,8 +97,8 @@
     text-align: center;
     width: 32px;
     height: 32px;
-    color: $darkGreen;
-    border: $lightGreen solid 2px;
+    color: #716652;
+    border: #f0b852 solid 2px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -110,16 +113,41 @@
   font-size: 18px;
 }
 
-.palette2{
-  border-left: solid 5px lightcoral;
-  .card-text-name{
-    color:lightblue;
+.js-palette1 {
+  .card-text {
+    border-left: solid 5px #6acdcc;
+    .card-text-name {
+      color: #716652;
+    }
   }
-  .card-text-job{
-    color: violet;
+  .social-media-icon {
+    color: #716652;
+    border: solid 2px #f0b852;
   }
-  .social-media-icon{
-    color: lightcoral;
-    border: lightseagreen solid 2px;
+}
+
+.js-palette2 {
+  .card-text {
+    border-left: solid 5px #555c1c;
+    .card-text-name {
+      color: #dea21a;
+    }
+  }
+  .social-media-icon {
+    color: #dea21a;
+    border: solid 2px #b94111;
+  }
+}
+
+.js-palette3 {
+  .card-text {
+    border-left: solid 5px #921c25;
+    .card-text-name {
+      color: #ff0000;
+    }
+  }
+  .social-media-icon {
+    color: #ff0000;
+    border: solid 2px #181d11;
   }
 }

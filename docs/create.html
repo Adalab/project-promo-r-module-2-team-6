@@ -16,212 +16,247 @@
 
 <body>
     <header class="header">
-        <img class="header__img" src="./assets/images/logo-awesome.svg" alt="logo awesome profile-cards">
-        <h1 class="header__title">Awsome profile-cards</h1> <!-- display none para que no se vea y encima poner la imagen -->
+      <a href="./index.html" class="header__link"
+        ><img
+          class="header__link--img"
+          src="./assets/images/logo-awesome.svg"
+          alt="logo awesome profile-cards"
+      /></a>
+      <h1 class="header__title">Awesome profile-cards</h1>
+      <!-- display none para que no se vea y encima poner la imagen -->
     </header>
+
     <main class="create">
         <section class="card-section">
-          <button class="reset">
+          <button class="reset js-reset">
             <i class="reset-icon fa-regular fa-trash-can"></i>
             <p class="reset-text">reset</p>
           </button>
-          <article class="card">
+          <article class="card js-preview-card">
             <div class="card-text">
-              <h2 class="card-text-name">nombre apellido</h2>
-              <p class="card-text-job">front-end developer</p>
+              <h2 class="card-text-name js-preview-name">nombre apellido</h2>
+              <p class="card-text-job js-preview-job">front-end developer</p>
             </div>
-            <img src="./assets/images/card_sample_pic_crop.jpg" alt="card picture" class="card-image" title="card picture" />
+            <img
+              src="./assets/images/adalaber.jpg"
+              alt="card picture"
+              class="card-image js-card-img"
+              title="card picture"
+            />
+
             <div class="social-media">
-              <a href="#" class="social-media-icon">
-                <i class="fa-solid fa-mobile-screen-button"></i></a>
-              <a href="#" class="social-media-icon">
+              <a href="#" class="social-media-icon js-phone-icon" target="_blank">
+                <i class="fa-solid fa-mobile-screen-button"></i
+              ></a>
+              <a href="#" class="social-media-icon js-email-icon" target="_blank">
                 <i class="fa-regular fa-envelope"></i>
               </a>
-              <a href="#" class="social-media-icon">
+              <a href="#" class="social-media-icon js-linkedin-icon" target="_blank">
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
-              <a href="#" class="social-media-icon">
+              <a href="#" class="social-media-icon js-github-icon" target="_blank">
                 <i class="fa-brands fa-github-alt"></i>
               </a>
             </div>
           </article>
         </section>
+
         <section>
-            <form>
-                <fieldset class="design">
-                  <div class="design__div">
-                    <i class="fa-solid fa-object-ungroup design__div--icon"></i>
-                    <legend class="design__div--legend">diseña</legend>
-                    <i
-                      class="fa-solid fa-chevron-up design__div--arrow js-arrow js-arrow-design-up"
-                    ></i>
-                    <i
-                      class="fa-solid fa-chevron-down design__div--arrow js-arrow js-arrow-design-down collapsed"
-                    ></i>
+          <form class="js-form" method="post">
+            <fieldset class="design">
+              <div class="design__div">
+                <i class="fa-solid fa-object-ungroup design__div--icon"></i>
+                <legend class="design__div--legend">diseña</legend>
+                <i class="fa fa-shield fa-shield-up design__div--arrow js-arrow js-arrow-design-up"></i>
+                <i
+                  class="fa fa-shield design__div--arrow js-arrow js-arrow-design-down collapsed"
+                ></i>
+              </div>
+
+              <div class="design__second js-design">
+                <p class="design__second--colors">colores</p>
+                <div class="div2_container">
+                  <div class="div2">
+                    <ul class="div2__palette">
+                      <label class="div2__palette--checkBox">
+                        <input
+                          type="radio"
+                          id="green"
+                          name="palette"
+                          class="js-palette1 p1"
+                          value="js-palette1"
+                      /></label>
+                      <li class="div2__palette--darkGreen div2__palette--list"></li>
+                      <li class="div2__palette--mediumGreen div2__palette--list"></li>
+                      <li class="div2__palette--lightGreen div2__palette--list"></li>
+                    </ul>
                   </div>
-
-                  <div class="design__second js-design">
-                    <p class="design__second--colors">colores</p>
-                    <div class="div2_container">
-                      <div class="div2">
-                        <ul class="div2__palette">
-                          <label class="div2__palette--checkBox"
-                            ><input type="radio" id="green" name="palette"
-                          /></label>
-                          <li class="div2__palette--darkGreen div2__palette--list"></li>
-                          <li class="div2__palette--mediumGreen div2__palette--list"></li>
-                          <li class="div2__palette--lightGreen div2__palette--list"></li>
-                        </ul>
-                      </div>
-                      <div class="div2">
-                        <ul class="div2__palette">
-                          <label class="div2__palette--checkBox"
-                            ><input type="radio" id="red" name="palette"
-                          /></label>
-                          <li class="div2__palette--darkRed div2__palette--list"></li>
-                          <li class="div2__palette--mediumRed div2__palette--list"></li>
-                          <li class="div2__palette--lightRed div2__palette--list"></li>
-                        </ul>
-                      </div>
-                      <div class="div2">
-                        <ul class="div2__palette">
-                          <label class="div2__palette--checkBox"
-                            ><input type="radio" id="random" name="palette"
-                          /></label>
-                          <li class="div2__palette--greenThree div2__palette--list"></li>
-                          <li class="div2__palette--yellowThree div2__palette--list"></li>
-                          <li class="div2__palette--greyThree div2__palette--list"></li>
-                        </ul>
-                      </div>
-                    </div>
+                  <div class="div2">
+                    <ul class="div2__palette">
+                      <label class="div2__palette--checkBox"
+                        ><input
+                          type="radio"
+                          id="red"
+                          name="palette"
+                          class="js-palette2 p2"
+                          value="js-palette2"
+                      /></label>
+                      <li class="div2__palette--darkRed div2__palette--list"></li>
+                      <li class="div2__palette--mediumRed div2__palette--list"></li>
+                      <li class="div2__palette--lightRed div2__palette--list"></li>
+                    </ul>
                   </div>
-                  <p class="line"></p>
-                </fieldset>
-
-                <fieldset class="fill">
-                  <div class="fill__container">
-                    <i class="fa-regular fa-keyboard fill__container--icon"></i>
-                    <legend class="fill__container--legend">rellena</legend>
-                    <i
-                      class="fa-solid fa-chevron-down fill__container--arrow js-arrow js-arrow-fill-down"
-                    ></i>
-                    <i
-                      class="fa-solid fa-chevron-up fill__container--arrow js-arrow js-arrow-fill-up collapsed"
-                    ></i>
+                  <div class="div2">
+                    <ul class="div2__palette">
+                      <label class="div2__palette--checkBox"
+                        ><input
+                          type="radio"
+                          id="random"
+                          name="palette"
+                          class="js-palette3 p3"
+                          value="js-palette3"
+                      /></label>
+                      <li class="div2__palette--greenThree div2__palette--list"></li>
+                      <li class="div2__palette--yellowThree div2__palette--list"></li>
+                      <li class="div2__palette--greyThree div2__palette--list"></li>
+                    </ul>
                   </div>
+                </div>
+              </div>
+              <p class="line"></p>
+            </fieldset>
 
-                  <div class="js-fill collapsed">
-                    <div class="fill__name">
-                      <label class="fill__name--label text-label" for="name"
-                        >nombre completo</label
-                      >
-                      <input
-                        type="text"
-                        id="name"
-                        class="fill__name--inputName input"
-                        placeholder="Ej: Sally Jill"
-                      />
-                    </div>
-                    <div class="fill__job">
-                      <label class="fill__job--label text-label" for="job">puesto</label>
-                      <input
-                        type="text"
-                        id="job"
-                        class="fill__job--inputJob input"
-                        placeholder="Ej: Front-end unicorn"
-                      />
-                    </div>
-                    <div class="fill__img">
-                      <label class="fill__img--label text-label" for="img"
-                        >imagen de perfil</label
-                      >
-                      <input
-                        type="button"
-                        id="img"
-                        class="fill__img--inputImg input"
-                        value="Añadir imagen"
-                      />
-                    </div>
-                    <div class="fill__email">
-                      <label class="fill__email--label text-label" for="email">email</label>
-                      <input
-                        type="email"
-                        id="email"
-                        class="fill__email--inputEmail input"
-                        placeholder="sally-hill@gmail.com"
-                      />
-                    </div>
-                    <div class="fill__tel">
-                      <label class="fill__tel--label text-label" for="tel">teléfono</label>
-                      <input
-                        type="tel"
-                        id="tel"
-                        class="fill__tel--inputTel input"
-                        placeholder="Ej: 555-55-55-55"
-                      />
-                    </div>
-                    <div class="fill__linkedin">
-                      <label class="fill__linkedin--label text-label" for="linkedin"
-                        >linkedin</label
-                      >
-                      <input
-                        type="text"
-                        id="linkedin"
-                        class="fill__linkedin--inputLinkedin input"
-                        placeholder="http://linkedin.com/in/sally.hill"
-                      />
-                    </div>
-                    <div class="fill__git">
-                      <label class="fill__git--label text-label" for="git">github</label>
-                      <input
-                        type="git"
-                        id="git"
-                        class="fill__git--inputGit input"
-                        placeholder="Ej: @sally-hill"
-                      />
-                    </div>
-                  </div>
-                </fieldset>
+            <fieldset class="fill">
+              <div class="fill__container">
+                <i class="fa-regular fa-keyboard fill__container--icon"></i>
+                <legend class="fill__container--legend">rellena</legend>
+                <i
+                  class="fa fa-shield fill__container--arrow js-arrow js-arrow-fill-down"
+                ></i>
+                <i
+                  class="fa fa-shield fa-shield-up fill__container--arrow js-arrow js-arrow-fill-up collapsed"
+                ></i>
+              </div>
 
-                <fieldset class="share">
-                  <div class="share__div">
-                    <i class="fa-icon fa-solid fa-share-nodes share__div--icon"></i>
-                    <legend class="share__div--legend">comparte</legend>
-                    <i
-                      class="fa-solid fa-chevron-up share__div--arrow js-arrow js-arrow-share-up collapsed"
-                    ></i>
-                    <i
-                      class="fa-solid fa-chevron-down share__div--arrow js-arrow js-arrow-share-down"
-                    ></i>
-                  </div>
+              <div class="js-fill collapsed">
+                <div class="fill__name">
+                  <label class="fill__name--label text-label" for="name"
+                    >nombre completo</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="fill__name--inputName input js-name js-input"
+                    placeholder="Ej: Sally Jill"
+                    required
+                  />
+                </div>
+                <div class="fill__job">
+                  <label class="fill__job--label text-label" for="job">puesto</label>
+                  <input
+                    type="text"
+                    id="job"
+                    name="job"
+                    class="fill__job--inputJob input js-job js-input"
+                    placeholder="Ej: Front-end unicorn"
+                    required
+                  />
+                </div>
+                <div class="fill__img">
+                  <label class="fill__img--label text-label" for="img"
+                    >imagen de perfil</label
+                  >
+                  <input
+                    type="button"
+                    id="img"
+                    class="fill__img--inputImg input js-input"
+                    value="Añadir imagen"
+                  />
+                </div>
+                <div class="fill__email">
+                  <label class="fill__email--label text-label" for="email">email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="fill__email--inputEmail input js-email js-input"
+                    placeholder="sally-hill@gmail.com"
+                  />
+                </div>
+                <div class="fill__tel">
+                  <label class="fill__tel--label text-label" for="phone">teléfono</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    class="fill__tel--inputTel input js-phone js-input"
+                    placeholder="Ej: 555-55-55-55"
+                  />
+                </div>
+                <div class="fill__linkedin">
+                  <label class="fill__linkedin--label text-label" for="linkedin"
+                    >linkedin</label
+                  >
+                  <input
+                    type="text"
+                    name="linkedin"
+                    id="linkedin"
+                    class="fill__linkedin--inputLinkedin input js-linkedin js-input"
+                    placeholder="http://linkedin.com/in/sally.hill"
+                  />
+                </div>
+                <div class="fill__git">
+                  <label class="fill__git--label text-label" for="github">github</label>
+                  <input
+                    type="text"
+                    name="github"
+                    id="github"
+                    class="fill__git--inputGit input js-github js-input"
+                    placeholder="Ej: @sally-hill"
+                  />
+                </div>
+              </div>
+            </fieldset>
 
-                  <button class="share__button js-btn-create collapsed">
-                    <i class="fa-regular fa-address-card share__button--icon"></i>
-                    crear tarjeta
-                  </button>
+            <fieldset class="share">
+              <div class="share__div">
+                <i class="fa-icon fa-solid fa-share-nodes share__div--icon"></i>
+                <legend class="share__div--legend">comparte</legend>
+                <i
+                  class="fa fa-shield fa-shield-up share__div--arrow js-arrow js-arrow-share-up collapsed"
+                ></i>
+                <i class="fa fa-shield share__div--arrow js-arrow js-arrow-share-down"></i>
+              </div>
 
-                  <div class="share__card">
-                    <h2 class="share__card--title">La tarjeta ha sido creada:</h2>
-                    <a class="share__card--url" href=""
-                      >https://awesome-profile-card.com id=A456DF0001</a
-                    >
+              <button class="share__button js-btn-create collapsed">
+                <i class="fa-regular fa-address-card share__button--icon"></i>
+                crear tarjeta
+              </button>
 
-                    <div class="share__twitter">
-                      <a
-                        class="share__twitter--twit twitter-share-button"
-                        href="https://twitter.com/intent/tweet"
-                        target="_blank"
-                      >
-                        <i class="fa-brands fa-twitter twitter-share-button__icon"></i>
-                        Compartir en twitter
-                      </a>
-                    </div>
-                    <p class="line"></p>
-                  </div>
-                </fieldset>
+              <div class="share__card">
+                <h2 class="share__card--title">La tarjeta ha sido creada:</h2>
+                <a class="share__card--url" href=""
+                  >https://awesome-profile-card.com id=A456DF0001</a
+                >
 
-            </form>
+                <div class="share__twitter">
+                  <a
+                    class="share__twitter--twit twitter-share-button"
+                    href="https://twitter.com/intent/tweet"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-twitter twitter-share-button__icon"></i>
+                    Compartir en twitter
+                  </a>
+                </div>
+                <p class="line"></p>
+              </div>
+            </fieldset>
+
+          </form>
         </section>
+
     </main>
     <footer class="footer">
         <p class="footer__copy">Awesome profile-cards @2018</p>
