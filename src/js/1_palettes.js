@@ -12,12 +12,12 @@ const functionEventPalettes = (event) => {
   card.classList.remove('js-palette2');
   card.classList.remove('js-palette3');
   card.classList.add(event.currentTarget.value);
-  if (event.currentTarget.value === 'js-palette1'){
-    imgCard.src = './assets/images/adalaber.jpg';
+  if (event.currentTarget.value === 'js-palette1') {
+    imgCard.style = 'background-image: url(./assets/images/adalaber.jpg)';
   } else if (event.currentTarget.value === 'js-palette2') {
-    imgCard.src = './assets/images/frontend.jpg';
+    imgCard.style = 'background-image: url(./assets/images/frontend.jpg)';
   } else if (event.currentTarget.value === 'js-palette3') {
-    imgCard.src = './assets/images/backend.jpg';
+    imgCard.style = 'background-image: url(./assets/images/backend.jpg)';
   }
 };
 
