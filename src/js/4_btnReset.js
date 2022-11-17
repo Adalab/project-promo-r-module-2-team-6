@@ -1,7 +1,4 @@
 'use strict';
-const inputs = document.querySelectorAll('.js-input');
-
-const btnReset = document.querySelector('.js-reset');
 
 function handleReset(event) {
   event.preventDefault();
@@ -19,7 +16,11 @@ for (let i = 0; i < 6; i++) {
     if (!input.classList.contains('fill__img--inputImg')) {
       input.value = '';
       input.href = '';
+      profileImage.style =
+        'background-image: url(./assets/images/adalaber.jpg)';
+      profilePreview.style.backgroundImage = '';
       getData(input);
+      localStorage.removeItem('data');
       updateCard();
     }
   }

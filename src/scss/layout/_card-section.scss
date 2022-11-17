@@ -118,39 +118,39 @@
 
 .js-palette1 {
   .card-text {
-    border-left: solid 5px #6acdcc;
+    border-left: solid 5px $mediumGreen;
     .card-text-name {
-      color: #716652;
+      color: $darkGreen;
     }
   }
   .social-media-icon {
-    color: #716652;
-    border: solid 2px #f0b852;
+    color: $darkGreen;
+    border: solid 2px $lightGreen;
   }
 }
 
 .js-palette2 {
   .card-text {
-    border-left: solid 5px #555c1c;
+    border-left: solid 5px $mediumRed;
     .card-text-name {
-      color: #dea21a;
+      color: $darkRed;
     }
   }
   .social-media-icon {
-    color: #dea21a;
-    border: solid 2px #b94111;
+    color: $darkRed;
+    border: solid 2px $lightRed;
   }
 }
 
 .js-palette3 {
   .card-text {
-    border-left: solid 5px #921c25;
+    border-left: solid 5px $yellowThree;
     .card-text-name {
-      color: #ff0000;
+      color: $greenThree;
     }
   }
   .social-media-icon {
-    color: #ff0000;
-    border: solid 2px #181d11;
+    color: $greenThree;
+    border: solid 2px $greyThree;
   }
 }

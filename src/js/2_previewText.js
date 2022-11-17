@@ -1,15 +1,5 @@
 'use strict';
 
-const fillForm = document.querySelector('.fill');
-
-const previewName = document.querySelector('.js-preview-name');
-const previewJob = document.querySelector('.js-preview-job');
-
-const linkedinIcon = document.querySelector('.js-linkedin-icon');
-const githubIcon = document.querySelector('.js-github-icon');
-const phoneIcon = document.querySelector('.js-phone-icon');
-const emailIcon = document.querySelector('.js-email-icon');
-
 function getData(selectedInput) {
   if (selectedInput.name === 'name') {
     data.name = selectedInput.value;

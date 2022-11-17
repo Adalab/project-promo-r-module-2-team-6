@@ -3,6 +3,8 @@
   margin: 27px 20px 30px 20px;
   border: none;
   display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
   flex-direction: column;
   &__div {
     display: flex;
@@ -29,6 +31,8 @@
 
   &__second {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
     padding-left: 10px;
     @media all and (min-width: 768px) {
@@ -74,41 +78,35 @@
     }
     //first palettte -WonderAdalaber
     &--darkGreen {
-      background-color: #716652;
+      background-color: $darkGreen;
     }
     &--mediumGreen {
-      background-color: #6acdcc;
+      background-color: $mediumGreen;
     }
     &--lightGreen {
-      background-color: #f0b852;
+      background-color: $lightGreen;
     }
     //second palette - Front-end
     &--darkRed {
-      background-color: #dea21a;
+      background-color: $darkRed;
     }
     &--mediumRed {
-      background-color: #555c1c;
+      background-color: $mediumRed;
     }
     &--lightRed {
-      background-color: #b94111;
+      background-color: $lightRed;
     }
     //third palette- Back-end
     &--greenThree {
-      background-color: #ff0000;
+      background-color: $greenThree;
     }
     &--yellowThree {
-      background-color: #921c25;
+      background-color: $yellowThree;
     }
     &--greyThree {
-      background-color: #181d11;
+      background-color: $greyThree;
     }
   }
-}
-
-.line {
-  width: 280px;
-  border-top: 1px solid #d8d8d8;
-  margin-top: 10px;
 }
 
 /* .shield-rotate{

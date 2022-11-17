@@ -1,5 +1,4 @@
 'use strict';
-const linkTwitter = document.querySelector('.js-twitter');
 function handleCreate(event) {
   event.preventDefault();
   fetch('https://awesome-profile-cards.herokuapp.com/card/', {
@@ -12,6 +11,7 @@ function handleCreate(event) {
     .then((response) => response.json())
     .then((responseJson) => {
       console.log(responseJson.cardURL);
+      shareSection.classList.remove('hidden');
       linkCard.innerHTML = responseJson.cardURL;
       linkCard.href = responseJson.cardURL;
       linkTwitter.href = `https://twitter.com/intent/tweet?url=${responseJson.cardURL}`;
