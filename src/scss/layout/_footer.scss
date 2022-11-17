@@ -1,4 +1,10 @@
+.footerdiv{
+
+  height: 100%;
+}
+
 .footer {
+  background-color: red;
   font-family: $mainFont;
   display: flex;
   flex-direction: column;
