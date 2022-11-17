@@ -11,13 +11,13 @@
     font-size: 18px;
     padding-bottom: 31px;
     &--icon {
-      color: $mainOrange;
+      color: $mainPurple;
       padding-right: 12px;
     }
     &--legend {
       font-family: $mainFont;
       font-weight: 600;
-      color: $greyMetal;
+      color: $mainPurple;
       text-transform: uppercase;
       padding-right: 168px;
     }
@@ -62,7 +62,7 @@
       margin-right: 42px;
       font-family: $mainFont;
       font-size: 13px;
-      color: $greyMetal;
+      color: $mainPurple;
       text-transform: uppercase;
     }
     &--input {
@@ -119,10 +119,11 @@
 } */
 
 .fa-shield {
-  color: $mainOrange;
+  color: $mainPurple;
   font-size: 20px;
 }
 
 .fa-shield-up {
+  color: $mainPurple;
   transform: rotate(180deg);
 }

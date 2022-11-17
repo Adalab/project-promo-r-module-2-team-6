@@ -1,25 +1,25 @@
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media all and (min-width: 768px) {
-        justify-content: flex-start;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $mainPurple;
+  @media all and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+  @media all and (min-width: 1024px) {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__link {
+    &--img {
+      width: 201px;
+      border-radius: 20px;
+      border: solid 2px #f1e29b;
+      margin: 31px 79px 30px 40px;
     }
-    @media all and (min-width: 1024px){
-        max-width: 1024px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    &__link{
-        
-
-        &--img{
-            width: 201px;
-            border-radius: 20px;
-            margin: 31px 79px 30px 40px;
-        }
-    }
-    &__title{
-        display: none;
-    }
+  }
+  &__title {
+    display: none;
+  }
 }

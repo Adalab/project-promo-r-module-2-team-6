@@ -1,6 +1,6 @@
 .card-section {
   height: 457px;
-  background-image: linear-gradient(#bfcdd0, #dde9ed);
+  background-image: linear-gradient($lightGreen, $mainPurple);
   padding: 42px 35px 40px 45px;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@
   }
 
   &-image {
-    background-image: url(../assets/images/adalaber.jpg);
+    background-image: url(../assets/images/aw_adalab.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
