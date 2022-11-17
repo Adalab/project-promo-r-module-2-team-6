@@ -19,7 +19,7 @@
   align-items: center;
   width: 100%;
   min-height: 70vh;
-  background-color: #FCF4A9;
+  background-color: #1b198b;;
   &__h1 {
     display: none;
   }
@@ -116,7 +116,7 @@
     margin: 38px 101px 30px 90px;
     border-radius: 21px;
     text-transform: uppercase;
-    background-color: #683268;
+    background-color: #1b198b;
     color: white;
    
     @media all and (min-width: 768px) {
@@ -149,7 +149,7 @@
   justify-content: center;
   align-items: center;
   width: 600px;
-  background-color: rgba(#cda9fc, $alpha: 0.7) ;
+  background-color: rgba(#709df0, $alpha: 0.7) ;
   padding: 15px;
   border-radius: 10px;
 }
