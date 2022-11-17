@@ -47,7 +47,7 @@
     }
     &--create {
       color: $mainOrange;
-      font-family: $landingTitle;
+      font-family: $landing;
       font-size: 19.2px;
       font-weight: 900;
       @media all and (min-width: 768px) {
@@ -56,8 +56,8 @@
     }
     &--text {
       color: $darkGreen;
-      font-family: $mainFont;
-      font-size: 12.8px;
+      font-family: $text;
+      font-size: 13px;
       text-align: center;
       white-space: pre-line;
       margin: 0px 27px 0px 27px;
