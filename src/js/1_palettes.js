@@ -25,6 +25,7 @@ const functionEventPalettes = (event) => {
   ) {
     imgCard.style = 'background-image: url(./assets/images/backend.jpg)';
   }
+  data.palette = event.currentTarget.value;
 };
 
 /////////Eventos///////////

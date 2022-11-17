@@ -1,3 +1,14 @@
 'use strict';
+let data = {
+  palette: '',
+  name: '',
+  job: '',
+  photo: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github: '',
+};
 
-const img = document.querySelector('.text-label');
+const submitBtn = document.querySelector('.js-btn-create');
+const linkCard = document.querySelector('.js-link-card');

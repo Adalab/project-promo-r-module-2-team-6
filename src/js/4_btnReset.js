@@ -1,17 +1,7 @@
-"use strict";
-const inputs = document.querySelectorAll(".js-input");
+'use strict';
+const inputs = document.querySelectorAll('.js-input');
 
-const btnReset = document.querySelector(".js-reset");
-
-// const data = {
-//     palette: '',
-//     name:'',
-//     job: '',
-//     email: '',
-//     phone: '',
-//     linkedin: '',
-//     github:'',
-//   };
+const btnReset = document.querySelector('.js-reset');
 
 function handleReset(event) {
   event.preventDefault();
@@ -26,15 +16,13 @@ for (let i = 0; i < 6; i++) {
 }; */
 
   for (const input of inputs) {
-    if (!input.classList.contains('fill__img--inputImg')){
+    if (!input.classList.contains('fill__img--inputImg')) {
       input.value = '';
       input.href = '';
       getData(input);
       updateCard();
     }
-    
   }
-  console.log(data);
 }
 
 btnReset.addEventListener('click', handleReset);
