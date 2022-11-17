@@ -35,7 +35,25 @@
         required
       />
     </div>
+
     <div class="fill__img">
+      <label class="fill__img--label text-label" for="img"
+        >imagen de perfil</label
+      >
+      <label
+        class="fill__img--inputImg input js-input action__upload-btn"
+        for="img-selector"
+        >añadir imagen</label
+      >
+      <input
+        type="file"
+        name=""
+        id="img-selector"
+        class="hidden js__profile-upload-btn"
+      />
+    </div>
+    <div class="profile__preview js__profile-preview"></div>
+    <!-- <div class="fill__img">
       <label class="fill__img--label text-label" for="img"
         >imagen de perfil</label
       >
@@ -45,7 +63,7 @@
         class="fill__img--inputImg input js-input"
         value="Añadir imagen"
       />
-    </div>
+    </div> -->
     <div class="fill__email">
       <label class="fill__email--label text-label" for="email">email</label>
       <input

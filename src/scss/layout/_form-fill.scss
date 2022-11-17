@@ -79,6 +79,11 @@
       border-radius: 3px;
       border: 1px solid $mainOrange;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      font-family: $mainFont;
+      text-transform: capitalize;
+      font-size: 14px;
+      text-align: center;
+      padding-left: 0;
     }
   }
   &__email {
@@ -111,11 +116,27 @@
   }
 }
 
-.arrow-fill-rotate{
+.profile__preview {
+  position: absolute;
+  transform: translate(159px, -69px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid $darkGreen;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+}
+
+.arrow-fill-rotate {
   transform: rotate(180deg);
 }
 
 .fa-shield {
   color: $mainOrange;
   font-size: 20px;
+}
+
+.hidden {
+  display: none;
 }

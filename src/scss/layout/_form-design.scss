@@ -4,8 +4,6 @@
   border: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   &__div {
     display: flex;
     align-items: center;
@@ -31,8 +29,6 @@
 
   &__second {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     gap: 100px;
     padding-left: 10px;
     @media all and (min-width: 768px) {
@@ -40,30 +36,37 @@
       padding-left: 0;
     }
 
-    &--colors {
+    /*  &--colors {
       font-family: $mainFont;
       font-size: 14px;
       color: $greyMetal;
       text-transform: uppercase;
       text-align: start;
-    }
+    } */
   }
 }
 
 .div2 {
   display: flex;
   flex-direction: column;
+
   &__palette {
     list-style: none;
     margin-bottom: 20px;
     display: flex;
+    justify-content: flex-end;
+    margin-left: 8px;
+
     &--checkBox {
       display: flex;
-      align-items: center;
-      width: 17px;
-      height: 17px;
-      padding-top: 8px;
-      padding-right: 20px;
+      margin-right: 42px;
+      font-family: $mainFont;
+      font-size: 13px;
+      color: $greyMetal;
+      text-transform: uppercase;
+    }
+    &--input {
+      margin-right: 5px;
     }
     &--list {
       width: 30px;
