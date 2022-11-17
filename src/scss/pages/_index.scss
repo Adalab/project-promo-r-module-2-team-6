@@ -25,7 +25,7 @@
   @media all and (max-width: 720px) {
     background-size: 390px;
   }
-  background-image: url('../images/superbc.png');
+  background-image: url("../images/superbc.png");
   background-size: 650px;
   background-origin: content-box;
   background-repeat: no-repeat;
@@ -37,18 +37,18 @@
   align-items: center;
   /* gap: 60px; */
   width: 100%;
-  /* min-height: 70vh; */
-  background-color: $backBlue;
+  // height: 90vh;
+  background-color: $newBlue;
   &__h1 {
     display: none;
   }
   &__img {
-    background-image: url('../images/awesomeRed.png');
+    background-image: url("../images/woman.png");
     background-position: center;
     object-fit: cover;
     background-size: 300px;
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 280px;
 
     margin: 30px 35px 35px 35px;
     @media all and (min-width: 768px) {
@@ -57,7 +57,7 @@
       /* margin-top: 50px; */
       margin: 0px 0px 15px 0px;
       position: relative;
-      top: 50px;
+      //top: 50px;
     }
   }
   &__title {
@@ -85,7 +85,6 @@
       @media all and (min-width: 768px) {
         font-size: 16px;
         width: 331px;
-        font-size: 16px;
       }
     }
   }
@@ -100,7 +99,10 @@
       width: 325px;
       height: 86px;
       justify-content: space-around;
-      margin: 17.8px 26px 40px 26px;
+      margin: 17.8px 26px 18px 26px;
+    }
+    @media all and (min-width: 1200px) {
+      margin: 17.8px 26px 38px 26px;
     }
     &--list {
       display: flex;
@@ -141,8 +143,9 @@
     margin: 38px 101px 30px 90px;
     border-radius: 21px;
     text-transform: uppercase;
-    background-color: $backBlue;
+    background-color: $newBlue;
     color: white;
+    border: 1px solid whitesmoke;
 
     @media all and (min-width: 768px) {
       margin: 213px 0 30px 0;
@@ -157,8 +160,6 @@
     }
   }
 }
-.landing-img {
-}
 
 .bg {
   @media all and (max-width: 768px) {
@@ -171,7 +172,7 @@
   justify-content: center;
   align-items: center;
   width: 600px;
-  /* background-color: rgba(#cda9fc, $alpha: 0.7); */
+
   padding: 15px;
   border-radius: 10px;
 }
