@@ -43,7 +43,8 @@
     &--create {
       color: $mainOrange;
       font-family: $landing;
-      font-size: 19.2px;
+      font-size: 27px;
+      letter-spacing: 2px;
       font-weight: bold;
       @media all and (min-width: 768px) {
         font-size: 24px;
@@ -51,7 +52,7 @@
     }
     &--text {
       color: $darkGreen;
-      font-family: $text;
+      font-family: $mainFont;
       font-size: 13px;
       text-align: center;
       white-space: pre-line;
