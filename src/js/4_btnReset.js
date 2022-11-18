@@ -16,8 +16,7 @@ for (let i = 0; i < 6; i++) {
     if (!input.classList.contains('fill__img--inputImg')) {
       input.value = '';
       input.href = '';
-      profileImage.style =
-        'background-image: url(./assets/images/adalaber.jpg)';
+      profileImage.style = 'background-image: url(./assets/images/giphy.gif)';
       profilePreview.style.backgroundImage = '';
       getData(input);
       localStorage.removeItem('data');
