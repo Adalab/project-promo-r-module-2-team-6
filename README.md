@@ -1,11 +1,11 @@
-![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/awesomeWoman.png)
+![awesome women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/awesomeWoman.png)
 
-#Awemose Women Cards
+# awesome Women Cards
 
 Este es nuestro proyecto grupal Awesome Women Cards, una web responsive en donde podrás crearte tu tarjeta de visita favorita y dejarle claro al mundo que eres una superheroína.
-![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/portada.png)
+![awesome women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/portada.png)
 
-#Pasos para arrancar el proyecto
+# Pasos para arrancar el proyecto
 
 1. **Descarga el repositorio.**
 1. **Abre una terminal** en la carpeta raíz de tu repositorio.
@@ -29,17 +29,18 @@ ste comando:
 
 Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
 
-#Crear tarjetas
+# Crear tarjetas
+
 Puede crear tarjetas increibles como esta.
-![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/card.png)
+![awesome women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/card.jpeg)
 
 Primero tendrás que elegir tu paleta de colores favorita.
-![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/palettes.png)
+![awesome women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/palettes.jpeg)
 
 A continuación rellenarás los campos con tus datos.
-![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/fill.png)
+![awesome women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/fill.jpeg)
 
 Y por último tendrás que presionar el botón: crear tarjeta. Al hacer click se generará un url con tu tarjeta y también un botón para poder compartirlo en tu cuenta de twitter.
-![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/create.png)
+![awesome women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/create.jpeg)
 
 Y ya estaría! Ya tendrías tu Awesome Woman Card!!!
