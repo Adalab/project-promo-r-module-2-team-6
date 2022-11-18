@@ -1,22 +1,23 @@
-@import 'core/reset';
-@import 'core/variables';
+@import "core/reset";
+@import "core/variables";
 
 //@import 'components/code';
 //@import 'components/links';
 //@import 'layout/page';
-@import 'layout/header';
-@import 'layout/card-section';
-@import 'layout/form-design';
-@import 'layout/form-fill';
-@import 'layout/form-share';
-@import 'layout/footer';
-@import 'layout/create';
-@import 'pages/index';
+@import "layout/header";
+@import "layout/card-section";
+@import "layout/form-design";
+@import "layout/form-fill";
+@import "layout/form-share";
+@import "layout/footer";
+@import "layout/create";
+@import "pages/index";
 
-.hidden{
-    display: none;
+.body {
+  //height: 100vh;
+  background-color: $newRed;
 }
 
-.body{
-    background-color: red;
+.hidden {
+  display: none;
 }

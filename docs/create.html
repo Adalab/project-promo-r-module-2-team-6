@@ -16,16 +16,11 @@
 
 <body>
     <header class="header">
-      <a href="./index.html" class="header__link"
-        ><img
-          class="header__link--img"
-          src="./assets/images/awesome-woman-cards.png"
-          alt="logo awesome profile-cards"
-      /></a>
+      <a href="./index.html" class="header__link"><img class="header__link--img" src="./assets/images/woman.png"
+          alt="logo awesome profile-cards" /></a>
       <h1 class="header__title">Awesome profile-cards</h1>
       <!-- display none para que no se vea y encima poner la imagen -->
     </header>
-
     <main class="create">
         <section class="card-section">
           <button class="reset js-reset">
@@ -39,7 +34,7 @@
             </div>
             <div
               class="card-image js-card-img profile__image js__profile-image"
-              style="background-image: url(./assets/images/adalaber.jpg)"
+              style="background-image: url(./assets/images/giphy.gif)"
             ></div>
 
             <div class="social-media">
@@ -65,8 +60,12 @@
               <div class="design__div">
                 <i class="fa-solid fa-object-ungroup design__div--icon"></i>
                 <legend class="design__div--legend">diseña</legend>
-                <i class="fa fa-shield fa-shield-up design__div--arrow js-arrow js-arrow-design-up"></i>
-                <i class="fa fa-shield design__div--arrow js-arrow js-arrow-design-down collapsed"></i>
+                <i
+                  class="fa fa-shield fa-shield-up design__div--arrow js-arrow js-arrow-design-up"
+                ></i>
+                <i
+                  class="fa fa-shield design__div--arrow js-arrow js-arrow-design-down collapsed"
+                ></i>
               </div>
 
               <div class="design__second js-design">
@@ -75,8 +74,13 @@
                   <div class="div2">
                     <ul class="div2__palette">
                       <label class="div2__palette--checkBox">wonder adalaber</label>
-                      <input type="radio" id="green" name="palette" class="js-palette1 p1 div2__palette--input"
-                        value="js-palette1" />
+                      <input
+                        type="radio"
+                        id="green"
+                        name="palette"
+                        class="js-palette1 p1 div2__palette--input"
+                        value="js-palette1"
+                      />
                       <li class="div2__palette--darkGreen div2__palette--list"></li>
                       <li class="div2__palette--mediumGreen div2__palette--list"></li>
                       <li class="div2__palette--lightGreen div2__palette--list"></li>
@@ -85,7 +89,13 @@
                   <div class="div2">
                     <ul class="div2__palette">
                       <label class="div2__palette--checkBox">super frontend</label>
-                      <input type="radio" id="red" name="palette" class="js-palette2 p2 div2__palette--input" value="js-palette2" />
+                      <input
+                        type="radio"
+                        id="red"
+                        name="palette"
+                        class="js-palette2 p2 div2__palette--input"
+                        value="js-palette2"
+                      />
                       <li class="div2__palette--darkRed div2__palette--list"></li>
                       <li class="div2__palette--mediumRed div2__palette--list"></li>
                       <li class="div2__palette--lightRed div2__palette--list"></li>
@@ -94,8 +104,13 @@
                   <div class="div2">
                     <ul class="div2__palette">
                       <label class="div2__palette--checkBox">backend woman</label>
-                      <input type="radio" id="random" name="palette" class="js-palette3 p3 div2__palette--input"
-                        value="js-palette3" />
+                      <input
+                        type="radio"
+                        id="random"
+                        name="palette"
+                        class="js-palette3 p3 div2__palette--input"
+                        value="js-palette3"
+                      />
                       <li class="div2__palette--greenThree div2__palette--list"></li>
                       <li class="div2__palette--yellowThree div2__palette--list"></li>
                       <li class="div2__palette--greyThree div2__palette--list"></li>
@@ -103,8 +118,8 @@
                   </div>
                 </div>
               </div>
-              <p class="line"></p>
             </fieldset>
+
             <fieldset class="fill">
               <div class="fill__container js-fill-title">
                 <i class="fa-regular fa-keyboard fill__container--icon"></i>
@@ -231,16 +246,14 @@
                 crear tarjeta
               </button>
 
-              <div class="share__card">
+              <div class="share__card hidden js-share-card">
                 <h2 class="share__card--title">La tarjeta ha sido creada:</h2>
-                <a class="share__card--url" href=""
-                  >https://awesome-profile-card.com id=A456DF0001</a
-                >
+                <a class="share__card--url js-link-card" href=""></a>
 
                 <div class="share__twitter">
                   <a
-                    class="share__twitter--twit twitter-share-button"
-                    href="https://twitter.com/intent/tweet"
+                    class="share__twitter--twit twitter-share-button js-twitter"
+                    href=""
                     target="_blank"
                   >
                     <i class="fa-brands fa-twitter twitter-share-button__icon"></i>
