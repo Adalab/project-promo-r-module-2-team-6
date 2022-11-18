@@ -3,6 +3,7 @@
 #Awemose Women Cards
 
 Este es nuestro proyecto grupal Awesome Women Cards, una web responsive en donde podrás crearte tu tarjeta de visita favorita y dejarle claro al mundo que eres una superheroína.
+![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/portada.png)
 
 #Pasos para arrancar el proyecto
 
@@ -30,5 +31,15 @@ Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros q
 
 #Crear tarjetas
 Puede crear tarjetas increibles como esta.
+![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/card.png)
 
-Añadirás tu Nombre, puesto de trabajo, foto, email, teléfono, github y linkedin.
+Primero tendrás que elegir tu paleta de colores favorita.
+![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/palettes.png)
+
+A continuación rellenarás los campos con tus datos.
+![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/fill.png)
+
+Y por último tendrás que presionar el botón: crear tarjeta. Al hacer click se generará un url con tu tarjeta y también un botón para poder compartirlo en tu cuenta de twitter.
+![awemose women cards](http://beta.adalab.es/project-promo-r-module-2-team-6/assets/images/create.png)
+
+Y ya estaría! Ya tendrías tu Awesome Woman Card!!!
